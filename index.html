@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="(max-width:1475px)" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!-- Responsive CSS -->
+</head>
+
+<body>
+    <script type="module"
+        src="import { particlesCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js'"></script>
+    <script src="https://kit.fontawesome.com/9c5fe3b840.js" crossorigin="anonymous"></script>
+    <section id="first">
+        <div id="app"></div>
+        <img src="Img/Galaxy.jpg" alt="" id="galaxy">
+        <!-- <p id="text">Welcome to my portfolio</p> -->
+        <span id="element"></span>
+        <a href="#second" id="btn">Explore</a>
+        <img src="Img/tech.png" alt="" id="tech">
+        <img src="Img/star.png" alt="" id="star">
+    </section>
+    <div class="sec" id="second">
+        <nav id="navbar">
+            <div class="left">Rex's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li><a href="/">About</a></li>
+                    <li id="project"><a href="/">Projects</a>
+                        <div id="dropdown-content">
+                            <div class="header">
+                                <h4>Mega Menu</h4>
+                            </div>
+                            <div class="row">
+                                <div class="column">
+                                    <!-- <h5>Category 1</h5> -->
+                                    <a href="#">Project 1</a>
+                                    <a href="#">Project 2</a>
+                                    <a href="#">Project 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/contact.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main id="main">
+            <section class="firstsection">
+                <div class="leftsection reveal">
+                    <p><i class="fa-solid fa-hand-peace"></i>Hi There! I'm <span id="purple">Rex</span></p>
+                    <span id="element2"></span>
+                    <span class="reveal" id="element3"></span>
+                    <div class="buttons reveal">
+                        <a href="https://drive.google.com/file/d/1ajqvEP0BWUmCIY5Pv2JPvlWGruEskqT8/view?usp=sharing"
+                            target="_blank" id="btn2">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Resume
+                        </a>
+                        <a href="https://github.com/ReX027" target="_blank" id="btn3">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Visit Github
+                        </a>
+                    </div>
+                </div>
+                <div class="rightsection reveal2">
+                    <img src="Img/bg.png">
+                </div>
+            </section>
+            <hr>
+            <section class="secondsection">
+                <div>
+                    <h1>Work Experience</h1>
+                    <h4>ServiceNow Developer - Jun'23 to Jul'23</h4>
+                    <p>Worked as an ServiceNow Developer Intern at Intellivate Technologies.</p>
+                    <p>Mainly worked to Streamlined ServiceNow ITSM module with client-side and server-side scripting
+                        for improved incident, change, problem etc</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <h3>Connect With Me</h3>
+                <ul>
+                    <li><a href="https://github.com/ReX027" target="_blank">Github</a><i
+                            class="fa-brands fa-github"></i></li>
+                    <li><a href="https://www.linkedin.com/in/tusharvaid/" target="_blank">Linkedin</a><i
+                            class="fa-brands fa-linkedin"></i></li>
+                    <li><a href="https://twitter.com/TusharV04843601" target="_blank">Twitter</a><i
+                            class="fa-brands fa-x-twitter"></i></li>
+                    <li><a href="">Email</a><i class="fa-regular fa-envelope"></i></li>
+                </ul>
+                <p>Built from scratch <img src="Img/heart.png" loading="lazy" alt="Lazy-loaded Image"> &#169
+                    Copyright
+                    2023 @Rex All rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed1 = new Typed('#element', {
+            strings: ['Welcome to my Portfolio'],
+            typeSpeed: 50,
+            showCursor: false
+        });
+        var typed2 = new Typed('#element2', {
+            strings: ['An Aspiring Web Developer'],
+            typeSpeed: 100,
+            showCursor: false
+        });
+        var typed3 = new Typed('#element3', {
+            strings: ['I design and code beautifully simple things, and I love what I do.'],
+            typeSpeed: 50,
+            showCursor: false
+        });
+    </script>
+    <script src="js/script.js" async></script>
+</body>
+
+</html>
