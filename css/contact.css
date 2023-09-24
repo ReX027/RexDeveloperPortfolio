@@ -1,120 +1,123 @@
 * {
     padding: 0;
     margin: 0;
-    color:white;
+    color: white;
+    scroll-behavior: smooth;
 }
 
 body {
     /* color: #ff0000d2; */
     font-family: 'Poppins', sans-serif;
-    overflow-x:hidden;
     /* border:2px solid red; */
-    height:100vh;
-    width:100vw;
-}
-
-nav {
-    background-color:transparent;
-    display: flex;
-    flex-direction:column-reverse;
-    align-items: center;
-    justify-content: space-around;
-    height: 82px;
-    border:2px solid red;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    width: 100vw;
+    background: url("/Img/bg_contact.jpg")no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
 }
 
 nav ul {
     list-style: none;
 }
 
-nav ul #left{
-    position:absolute;
-    left:10%;
-    top:28px;
-    font-size:1.8rem;
+nav ul #left {
+    position: absolute;
+    left: 10%;
+    top: 28px;
+    font-size: 1.8rem;
     /* font-weight: 100; */
 }
-nav ul #right{
+
+nav ul #right {
     /* border:2px solid red; */
-    position:absolute;
-    right:10%;
-    top:35px;
+    position: absolute;
+    right: 10%;
+    top: 35px;
     cursor: pointer;
 }
-nav ul #right:hover{
-    opacity:0.6;
+
+nav ul #right:hover {
+    opacity: 0.6;
 }
-header::before{
-    content:'';
-    background:url('/Img/bg_contact.jpg')no-repeat center center/cover;
-    position:absolute;
-    width:100vw;
-    height:100vh;
-    z-index:-1;
-    top:0;
-    opacity:0.97;
+
+header img {
+    position: absolute;
+    left: 50%;
+    top: 5%;
 }
-header hr{
-    border:0;
-    background:rgba(255, 255, 255, 0.384);
-    height:1px;
-}
-header img{
-    position:absolute;
-    left:50%;
-    top:5%;
-}
+
 /* Section form */
-section{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    margin:100px;
+#section {
+    display: flex;
+    justify-content: center;
+    /* border:2px solid red; */
+    /* align-items:center; */
+    height: 80%;
+    margin: 150px;
 }
-section h3{
-    font-size:1.7rem;
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+
+}
+
+section h3 {
+    font-size: 1.7rem;
+    width: 100%;
+    text-align: center;
+    margin: 45px 0px;
     /* border:2px solid white; */
-    background:transparent;
+    background: transparent;
     backdrop-filter: blur(15px);
 }
-form{
+
+form {
     width: 400px;
     height: 500px;
-    border: 2px solid  #625d5d;
+    border: 2px solid #625d5d;
     display: flex;
-    margin:30px;
-    flex-direction:column;
+    margin: 30px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     backdrop-filter: blur(15px);
     background: transparent;
 }
-.inputbox{
+
+.inputbox {
     position: relative;
     margin: 30px 0;
     width: 300px;
     border-bottom: 2px solid#fff;
 }
-.inputbox label{
-    position: absolute ;
+
+.inputbox label {
+    position: absolute;
     top: 50%;
     left: 5px;
     transform: translateY(-50%);
     color: #fff;
-    font-size: 1em ;
+    font-size: 1em;
     pointer-events: none;
     transition: 0.5s;
 }
-.inputbox input:not(:invalid) + label,
-.inputbox input:focus + label {
-  top: -5px;
-  visibility:hidden;
-  opacity:0.7;
-  font-size:0.8rem;
+
+.inputbox input:not(:invalid)+label,
+.inputbox input:focus+label {
+    top: -5px;
+    visibility: hidden;
+    opacity: 0.7;
+    font-size: 0.8rem;
 }
 
-.inputbox input{
+.inputbox input {
     width: 100%;
     height: 50px;
     background: transparent;
@@ -124,33 +127,37 @@ form{
     padding: 0 35px 0 5px;
     color: #ffffff;
 }
-.inputbox i{
+
+.inputbox i {
     position: absolute;
     right: 8px;
     color: #fff;
     font-size: 1.2em;
     top: 20px;
 }
-.mytextarea label{
-    font-size:1em;
-    color:rgb(255, 255, 255);
+
+.mytextarea label {
+    font-size: 1em;
+    color: rgb(255, 255, 255);
     position: absolute;
     top: 56%;
     left: 13%;
     font-size: 1em;
     pointer-events: none;
 }
-.mytextarea #text{
-    background-color:transparent;
+
+.mytextarea #text {
+    background-color: transparent;
     outline: none;
     font-size: large;
-    border:none;
-    border-bottom:1px solid rgb(255, 255, 255);
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
     margin-top: 68px;
     width: 101%;
     margin-right: 6px;
 }
-button{
+
+button {
     width: 50%;
     height: 40px;
     border-radius: 40px;
@@ -163,11 +170,13 @@ button{
     font-size: 1.3em;
     font-weight: 700;
 }
-button:hover{
+
+button:hover {
     /* background-color:#e6e2e2; */
-    opacity:0.5;
+    opacity: 0.5;
 }
-.forget{
+
+.forget {
     display: flex;
     justify-content: space-between;
     margin: 20px 190px 15px 0px;
@@ -175,16 +184,205 @@ button:hover{
     color: #fff;
 }
 
-.forget label input[ type="checkbox"]{
+.forget label input[ type="checkbox"] {
     margin-right: 6px;
 }
 
 /* Responsive */
-@media only screen and (max-width:1059px) {
-    body{
-        width:100vw;
-        height:100vh;
+@media only screen and (max-width:900px) {
+    * {
+        color: rgb(255, 255, 255);
     }
-  
+
+    nav ul #left {
+        margin: 2px -37px;
+    }
+
+    nav ul #right {
+        margin: 12px -12px;
+    }
+
+    section h3 {
+        margin: 34px 0px;
+    }
 }
 
+@media only screen and (max-width:900px) {
+    * {
+        color: rgb(255, 255, 255);
+    }
+
+    nav ul #left {
+        margin: 2px -37px;
+    }
+
+    nav ul #right {
+        margin: 12px -12px;
+    }
+
+    section h3 {
+        margin: 34px 0px;
+    }
+}
+
+@media only screen and (max-width:587px) {
+    * {
+        color: rgb(255, 255, 255);
+    }
+
+    nav ul #left {
+        margin: 2px -37px;
+        font-size: 1.6rem;
+    }
+
+    nav ul #right {
+        margin: 1px -12px;
+    }
+
+    header img {
+        left: 54%;
+        height: 43px;
+    }
+
+    section h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width:452px) {
+    * {
+        color: rgb(255, 255, 255);
+    }
+
+    section h3 {
+        font-size: 1.3rem;
+    }
+
+    form {
+        height: 483px;
+        margin: -21px;
+    }
+}
+
+@media only screen and (max-width:437px) {
+    * {
+        color: rgb(255, 255, 255);
+    }
+
+    section h3 {
+        font-size: 1.3rem;
+    }
+
+    form {
+        height: 438px;
+        width: 340px;
+        margin: -21px;
+    }
+
+    .inputbox {
+        margin: 15px 0;
+    }
+
+    .mytextarea label {
+        top: 48%;
+        left: 8%;
+    }
+}
+
+@media only screen and (max-width:355px) {
+    * {
+        color: rgb(255, 255, 255);
+    }
+
+    nav ul #left {
+        position: absolute;
+        left: 15%;
+        top: 28px;
+        font-size: 1.2rem;
+        /* font-weight: 100; */
+    }
+    nav ul #right{
+        margin: 1px -25px;
+    }
+
+    header img {
+        left: 61%;
+        height: 25px;
+    }
+    .fa-circle-xmark{
+        height:10px;
+    }
+
+    section h3 {
+        font-size: 1.3rem;
+    }
+
+    form {
+        height: 438px;
+        width: 318px;
+        margin: -21px;
+    }
+
+    .inputbox {
+        margin: 15px 0;
+        width: 83%;
+    }
+
+    .mytextarea label {
+        top: 48%;
+        left: 8%;
+    }
+    .mytextarea #text{
+        margin-right: -22px;
+    }
+}
+@media only screen and (max-width:332px) {
+    * {
+        color: rgb(255, 255, 255);
+    }
+
+    nav ul #left {
+        position: absolute;
+        left: 15%;
+        top: 28px;
+        font-size: 1.2rem;
+        /* font-weight: 100; */
+    }
+    nav ul #right{
+        margin: 1px -25px;
+    }
+
+    header img {
+        left: 61%;
+        height: 25px;
+    }
+    .fa-circle-xmark{
+        height:10px;
+    }
+
+    section h3 {
+        font-size: 1.3rem;
+    }
+
+    form {
+        height: 438px;
+        width: 280px;
+        margin: -21px;
+    }
+
+    .inputbox {
+        margin: 15px 0;
+        width: 83%;
+    }
+
+    .mytextarea label {
+        top: 48%;
+        left: 8%;
+    }
+    .mytextarea #text{
+        margin-right: -22px;
+    }
+    .forget label{
+        width:30%;
+    }
+}
