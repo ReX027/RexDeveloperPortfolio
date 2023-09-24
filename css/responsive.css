@@ -10,7 +10,6 @@
 }
 
 @media only screen and (min-width:1066px) and (max-width: 1279px) {
-
     .leftsection p {
         width: 36%;
     }
@@ -96,7 +95,7 @@
     }
 
     nav ul {
-        width: 122%;
+        width: 112%;
     }
 
     nav ul li {
@@ -122,7 +121,7 @@
 
     .firstsection .buttons {
         position: relative;
-        left: 65%;
+        left: 60%;
         top: 0;
         /* font-size:1rem; */
     }
@@ -182,7 +181,7 @@
     }
 
     .leftsection p {
-        width: 100%;
+        width: 36%;
     }
 
     #element2 {
@@ -256,7 +255,7 @@
     }
 
     .leftsection p {
-        width: 100%;
+        width: 40%;
     }
 
     #element2 {
@@ -303,18 +302,15 @@
         margin: 21px 6px;
         width: 80%;
     }
-
-    .fa-github {
-        padding: 0 7px;
+    .fa-brands{
+        padding: 1px;
+    }
+    
+    .fa-regular{
+        padding:10px;
     }
 
-    .fa-x-twitter {
-        padding: 0 8px;
-    }
-
-    .fa-envolope {
-        padding: 0 17px;
-    }
+    
 }
 
 @media screen and (max-width:548px) {
@@ -341,7 +337,7 @@
     }
 
     .leftsection p {
-        width: 100%;
+        width: 40%;
     }
 
     #element2 {
@@ -394,42 +390,132 @@
         margin: 21px 6px;
         width: 80%;
     }
-
-    .fa-github {
-        padding: 0 7px;
+   
+    .fa-brands{
+        padding: 1px;
+    }
+    
+    .fa-regular{
+        padding:10px;
     }
 
-    .fa-x-twitter {
-        padding: 0 8px;
-    }
-
-    .fa-envolope {
-        padding: 0 17px;
-    }
+  
 }
 
-@media screen and (max-width:459px) {
-   #first span{
-    font-size:2rem;
-   }
-   #first img{
-    height: 102vh;
-   }
-  #second{
-    top:102vh;
-  }
+@media screen and (max-width:490px) {
+  
     nav {
         flex-direction: column;
-        justify-content: center;
-        padding:22px 0;
+        justify-content:space-around;
+        padding:10px 0;
     }
 
     nav ul {
-        width: 103%;
+        width: 100%;
     }
 
     nav ul li {
-        margin: 0 6px;
+        margin: 0 0;
+    }
+    nav ul li a{
+        font-size:1rem;
+    }
+    .firstsection {
+        flex-direction: column;
+        margin: 70px 0;
+    }
+
+    .leftsection {
+        width: 140%;
+    }
+
+    .leftsection p {
+        width: 45%;
+    }
+
+    #element2 {
+        width: 60%;
+        position: relative;
+        left:60px;
+        font-size:1.7rem;
+    }
+
+    #element3 {
+        font-size: 1.2rem;
+        position: relative;
+        left: 144px;
+    }
+
+    .firstsection .buttons {
+        position: relative;
+        left: 40%;
+        top: 19px;
+        /* font-size:1rem; */
+    }
+
+    .firstsection .buttons a {
+        font-size: 13px;
+    }
+
+    .rightsection {
+        width: 45%;
+    }
+
+    .rightsection img {
+        margin: 23px 0;
+        width: 92%;
+        position: relative;
+        /* top: -62px; */
+    }
+
+    .secondsection {
+        max-width: 83vw;
+    }
+
+    .footer ul {
+        flex-wrap: wrap;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer ul li {
+        margin: 21px 6px;
+        width: 80%;
+    }
+    .footer ul li a{
+        padding: 0 35px;
+    }
+    .fa-brands{
+        padding: 1px;
+    }
+    
+    .fa-regular{
+        padding:10px;
+    }
+
+    
+}
+@media screen and (max-width:432px) {
+  
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        padding: 2px 0;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0 0;
+    }
+    nav ul li a{
+        font-size:1rem;
     }
 
     .firstsection {
@@ -442,22 +528,29 @@
     }
 
     .leftsection p {
-        width: 100%;
+        width: 40%;
+        position: relative;
+        left: 101px;
+        font-size:1.3rem;
     }
 
     #element2 {
-        width: 60%;
+        width: 70%;
+        position: relative;
+        left:22px;
+        font-size:1.7rem;
     }
 
     #element3 {
         font-size: 1.2rem;
         position: relative;
-        left: 144px;
+        top: 10px;
+        left: 105px;
     }
 
     .firstsection .buttons {
         position: relative;
-        left: 40%;
+        left: 35%;
         top: 19px;
         /* font-size:1rem; */
     }
@@ -486,7 +579,7 @@
     }
 
     .footer p {
-        font-size: 1rem;
+        font-size: 0.8rem;
         flex-direction: column;
         align-items: center;
     }
@@ -495,16 +588,119 @@
         margin: 21px 6px;
         width: 80%;
     }
+    .footer ul li a{
+        padding: 0 34px;
+    }
+    .footer ul li a{
+        padding: 0 35px;
+    }
+    .fa-brands{
+        padding: 1px;
+    }
+    
+    .fa-regular{
+        padding:10px;
+    }
+    
+}
 
-    .fa-github {
-        padding: 0 7px;
+@media screen and (max-width:396px) {
+  
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        padding: 2px 0;
     }
 
-    .fa-x-twitter {
-        padding: 0 8px;
+    nav ul {
+        width: 100%;
     }
 
-    .fa-envolope {
-        padding: 0 17px;
+    nav ul li {
+        margin: -6px -3px;
+    }
+    nav ul li a{
+        font-size:0.9rem;
+    }
+
+    .firstsection {
+        flex-direction: column;
+        margin: 70px 0;
+    }
+
+    .leftsection {
+        width: 140%;
+    }
+
+    .leftsection p {
+        width: 40%;
+        position: relative;
+        left: 90px;
+        font-size:1.1rem;
+    }
+
+    #element2 {
+        width: 70%;
+        position: relative;
+        left:22px;
+        font-size:1.5rem;
+    }
+
+    #element3 {
+        font-size: 1.1rem;
+        position: relative;
+        top: 10px;
+        left: 105px;
+    }
+
+    .firstsection .buttons {
+        position: relative;
+        left: 35%;
+        top: 19px;
+        /* font-size:1rem; */
+    }
+
+    .firstsection .buttons a {
+        font-size: 10px;
+    }
+
+    .rightsection {
+        width: 45%;
+    }
+
+    .rightsection img {
+        margin: 23px 0;
+        width: 92%;
+        position: relative;
+        /* top: -62px; */
+    }
+
+    .secondsection {
+        max-width: 83vw;
+    }
+
+    .footer ul {
+        flex-wrap: wrap;
+    }
+
+    .footer p {
+        font-size: 0.7rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer ul li {
+        margin: 21px 6px;
+        width: 80%;
+    }
+    .footer ul li a{
+        padding: 0 35px;
+    }
+    .fa-brands{
+        padding: 1px;
+    }
+    
+    .fa-regular{
+        padding:10px;
     }
 }

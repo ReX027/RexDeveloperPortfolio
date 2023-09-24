@@ -17,22 +17,13 @@
     <script type="module"
         src="import { particlesCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js'"></script>
     <script src="https://kit.fontawesome.com/9c5fe3b840.js" crossorigin="anonymous"></script>
-    <section id="first">
-        <div id="app"></div>
-        <img src="Img/Galaxy.jpg" alt="" id="galaxy">
-        <!-- <p id="text">Welcome to my portfolio</p> -->
-        <span id="element"></span>
-        <a href="#second" id="btn">Explore</a>
-        <img src="Img/tech.png" alt="" id="tech">
-        <img src="Img/star.png" alt="" id="star">
-    </section>
     <div class="sec" id="second">
         <nav id="navbar">
-            <div class="left">Rex's Portfolio</div>
+            <div class="left" onclick="fun()">Rex's Portfolio</div>
             <div class="right">
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li><a href="/">About</a></li>
                     <li id="project"><a href="/">Projects</a>
@@ -115,11 +106,6 @@
     </div>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-        var typed1 = new Typed('#element', {
-            strings: ['Welcome to my Portfolio'],
-            typeSpeed: 50,
-            showCursor: false
-        });
         var typed2 = new Typed('#element2', {
             strings: ['An Aspiring Web Developer'],
             typeSpeed: 100,

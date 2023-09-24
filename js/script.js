@@ -1,14 +1,12 @@
-let galaxy = document.getElementById('galaxy');
-let tech = document.getElementById('tech');
-let star = document.getElementById('star');
-let btn = document.getElementById('btn');
-let text = document.getElementById('element');
+
 window.addEventListener('scroll', function () {
     let value = window.scrollY;
-    star.style.left = value * 0.25 + 'px';
-    text.style.marginTop = value * 0.25 + 'px';
-    btn.style.marginTop = value * 0.25 + 'px';
 })
+
+
+function fun(){
+    window.location.reload();
+}
 
 
 // Animation in HomePage
