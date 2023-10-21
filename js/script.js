@@ -1,55 +1,95 @@
 
 
-window.addEventListener('scroll', function () {
-    let value = window.scrollY;
+// window.addEventListener('scroll', function () {
+//   var secondsection = document.querySelector(".secondsection");
+//   var windowpos = window.scrollY;
+//   var pos = secondsection.position();
+//   console.log(pos.top);
+//   if (windowpos > pos.top && pos.top+500 >=windowpos) {
+//     secondsection.classList.add('visible');
+//   } else {
+//     secondsection.classList.remove('visible');
+//   }
 
-})
+// })
 
 
-function fun() {
-    window.location.reload();
-}
+// function fun() {
+//   window.location.reload();
+// }
 
 
 // Animation in HomePage
-function reveal() {
-    var reveals = document.querySelectorAll(".reveal,.reveal2");
-    for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        // var elementVisible = 0;
+window.addEventListener("load", function () {
+  var reveals = document.querySelectorAll('.reveal, .reveal2');
+  var reveals3 = document.querySelectorAll('.reveal3');
+  console.log("HI");
+  function handleReveal() {
+    var windowHeight = window.innerHeight;
 
-        if (elementTop < windowHeight) {
-            reveals[i].classList.add("active");
-        }
-        else {
-            reveals[i].classList.remove("active");
-            
-        }
+    for (var i = 0; i < reveals.length; i++) {
+      var elementTop = reveals[i].getBoundingClientRect().top;
+
+      if (elementTop < windowHeight) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
     }
-}
-window.addEventListener("scroll", reveal);
-window.addEventListener("load", reveal);
-document.addEventListener("DOMContentLoaded", function() {
-    var lazyImages = [].slice.call(document.querySelectorAll(".lazy"));
-  
-    if ("IntersectionObserver" in window) {
-      let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            let lazyImage = entry.target;
-            lazyImage.src = lazyImage.dataset.src;
-            lazyImage.srcset = lazyImage.dataset.srcset;
-            lazyImage.classList.remove("lazy");
-            lazyImageObserver.unobserve(lazyImage);
-          }
-        });
-      });
-  
-      lazyImages.forEach(function(lazyImage) {
-        lazyImageObserver.observe(lazyImage);
-      });
-    } else {
-      // Possibly fall back to event handlers here
+
+    for (var i = 0; i < reveals3.length; i++) {
+      var elementTop = reveals3[i].getBoundingClientRect().top;
+      var revealpoint = 150;
+      if (elementTop < windowHeight - revealpoint) {
+        reveals3[i].classList.add("active2");
+      } else {
+        reveals3[i].classList.remove("active2");
+      }
     }
-  });
+  }
+
+  // Call handleReveal initially
+  handleReveal();
+
+  // Add a scroll event listener
+  window.addEventListener("scroll", handleReveal);
+});
+
+// window.addEventListener("scroll", revealcontent);
+// function reveal() {
+//   console.log("HIII");
+//   var reveals = document.querySelectorAll('.reveal,.reveal2');
+//   // var reveals3 = document.querySelectorAll('.reveal3');
+//   for (var i = 0; i < reveals.length; i++) {
+//     var windowHeight = window.innerHeight;
+//     var elementTop = reveals[i].getBoundingClientRect().top;
+//     // var elementVisible = 0;
+//     // var revealpoint = 150;
+
+//     if (elementTop < windowHeight) {
+//       reveals[i].classList.add("active");
+//       // reveals3[i].classList.add("active2");
+//     }
+//     else {
+//       reveals[i].classList.remove("active");
+//       // reveals3[i].classList.remove("active2");
+
+//     }
+//   }
+// }
+// function revealcontent() {
+//   var reveal = document.querySelector('.reveal3');
+//   for (var i = 0; i < reveal.length; i++) {
+//     var windowHeight = window.innerHeight;
+//     var elementTop = reveal[i].getBoundingClientRect().top;
+//     // var elementVisible = 0;
+//     var revealpoint = 150;
+//     if (elementTop < windowHeight - revealpoint) {
+//       reveal[i].classList.add("active2");
+//     }
+//     else {
+//       reveal[i].classList.remove("active2");
+//     }
+//   }
+// }
+

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" media="(max-width:1475px)" href="css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +16,8 @@
 </head>
 
 <body>
-    <script type="module"
-        src="import { particlesCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js'"></script>
     <script src="https://kit.fontawesome.com/9c5fe3b840.js" crossorigin="anonymous"></script>
+
     <div class="sec" id="second">
         <nav id="navbar">
             <div class="left" onclick="fun()">Rex's Portfolio</div>
@@ -25,18 +26,36 @@
                     <li>
                         <a href="/">Home</a>
                     </li>
-                    <li><a href="/">About</a></li>
-                    <li id="project"><a href="/">Projects</a>
-                        <div id="dropdown-content">
-                            <div class="header">
-                                <h4>Mega Menu</h4>
-                            </div>
-                            <div class="row">
-                                <div class="column">
-                                    <!-- <h5>Category 1</h5> -->
-                                    <a href="#">Project 1</a>
-                                    <a href="#">Project 2</a>
-                                    <a href="#">Project 3</a>
+                    <li>
+                        <a href="/">About</a>
+                    </li>
+                    <li id="project"><a href="#projectdetail">Projects</a>
+                        <div id="dropdowncontent">
+                            <div class="rowcontent">
+                                <div class="cardcontent">
+                                    <img src="/Img/TextUtils.png" class="card-img-top" alt="...">
+                                    <div class="card-bodycontent">
+                                        <h3 class="card-titlecontent">TextUtils</h3>
+                                        <a href="http://64.227.176.178" class="btn">Visit <i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>
+                                </div>
+                                <div class="cardcontent">
+                                    <img src="/Img/PGLife.png" class="card-img-top" alt="...">
+                                    <div class="card-bodycontent">
+                                        <h3 class="card-titlecontent">PG Life</h3>
+                                        <a href="http://146.190.9.56/" class="btn">Visit <i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>
+                                </div>
+                                <div class="cardcontent">
+                                    <img src="/Img//Gym.png" class="card-img-top" alt="...">
+                                    <div class="card-bodycontent">
+                                        <h3 class="card-titlecontent">Gym Website</h3>
+                                        <a href="http://64.227.176.178:3000/" class="btn">Visit <i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -54,7 +73,7 @@
                     <span id="element2"></span>
                     <span class="reveal" id="element3"></span>
                     <div class="buttons reveal">
-                        <a href="https://drive.google.com/file/d/1ajqvEP0BWUmCIY5Pv2JPvlWGruEskqT8/view?usp=sharing"
+                        <a href="https://drive.google.com/file/d/1dwXZw4ayMOtmaxeDcKcKe7az8C7mK4Qc/view?usp=sharing"
                             target="_blank" id="btn2">
                             <span></span>
                             <span></span>
@@ -72,17 +91,70 @@
                     </div>
                 </div>
                 <div class="rightsection reveal2">
-                    <img src="Img/bg.png" >
+                    <img src="Img/bg.png">
                 </div>
             </section>
             <hr>
             <section class="secondsection">
-                <div>
-                    <h1>Work Experience</h1>
-                    <h4>ServiceNow Developer - Jun'23 to Jul'23</h4>
-                    <p>Worked as an ServiceNow Developer Intern at Intellivate Technologies.</p>
-                    <p>Mainly worked to Streamlined ServiceNow ITSM module with client-side and server-side scripting
-                        for improved incident, change, problem etc</p>
+                <div id="projectdetail">
+                    <h2><span>Project Details</span></h2>
+                </div>
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/Img/TextUtils.png" class="d-block w-100" alt="...">
+                            <div class="card carousel-img">
+                                <img src="/img/TextUtils.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">TextUtils <span
+                                            class="badge rounded-pill text-bg-dark">react</span></h5>
+                                    <p class="card-text">A web application built using react to help user
+                                        to analyze text and manipulate with it.</p>
+                                    <a href="http://64.227.176.178" class="btn">Visit <i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/Img//PGLife.png" class="d-block w-100" alt="...">
+                            <div class="card carousel-img">
+                                <img src="/img/PGLife.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">PG Life <span
+                                            class="badge rounded-pill text-bg-dark">php</span></h5>
+                                    <p class="card-text">A LAMP stack website where one can find the perfect
+                                        accommodation.</p>
+                                    <a href="http://146.190.9.56/" class="btn">Visit <i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/Img/Gym.png" class="d-block w-100" alt="...">
+                            <div class="card carousel-img">
+                                <img src="/img/Gym.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">GYM <span class="badge rounded-pill text-bg-dark">node</span>
+                                    </h5>
+                                    <p class="card-text">A GYM website built using pure pug and node.Js where user can
+                                        book class.</p>
+                                    <a href="http://64.227.176.178:3000/" class="btn">Visit <i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <i class="fa-solid fa-hand-point-left fa-2xl carousel-control" aria-hidden="true"
+                            style="color: #c410d1;"></i>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <i class="fa-solid fa-hand-point-right fa-2xl carousel-control" aria-hidden="true"
+                            style="color: #c410d1;"></i>
+                    </button>
                 </div>
             </section>
         </main>
@@ -117,7 +189,10 @@
             showCursor: false
         });
     </script>
-    <script src="js/script.js" async></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
