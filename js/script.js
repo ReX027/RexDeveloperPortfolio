@@ -13,11 +13,14 @@
 
 // })
 
+// Logo reload
+function fun() {
+  window.location.reload();
+}
 
-// function fun() {
-//   window.location.reload();
-// }
-
+document.getElementById("linkedinlink").addEventListener("click", function() {
+  window.location.href = "https://www.linkedin.com/in/tusharvaid/"; // Replace with the URL you want to link to
+});
 
 // Animation in HomePage
 window.addEventListener("load", function () {

@@ -126,6 +126,7 @@ form {
     font-size: 1em;
     padding: 0 35px 0 5px;
     color: #ffffff;
+    caret-color:white;
 }
 
 .inputbox i {

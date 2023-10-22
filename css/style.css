@@ -95,7 +95,40 @@ nav ul li a:hover {
         transform: rotate(2deg);
     }
 }
-
+/* offcanvas  */
+.offcanvas{
+    --bs-offcanvas-width: 628px;
+}
+.offcanvas-title{
+    font-family:monospace;
+}
+.offcanvas-subheading h5{
+    text-align:center;
+    color:purple;
+    font-weight:bold;
+    margin-top:10px;
+}
+.offcanvas-body p{
+    color:#ada8a8e0;
+    font-family:serif;
+}
+.highlightabouttext{
+    color:rgb(202, 195, 195);
+}
+#linkedinlink{
+    color:rgb(29, 29, 196);
+    cursor: pointer;
+    border-bottom:1px solid blue;
+}
+#offcanvasbtn{
+    background-color:purple;
+    color:white;
+    margin:10px 0;
+    padding:4px;
+    border-radius: 10px;
+    border:none;
+    text-transform:lowercase;
+}
 /* hover menu */
 #dropdowncontent {
     position: absolute;
@@ -207,7 +240,7 @@ nav ul li a:hover {
 }
 
 .leftsection p {
-    width: 26%;
+    width: 30%;
     padding: 2px;
     background-color: #1d225a54;
     border-radius: 16px;
@@ -504,7 +537,13 @@ main hr {
     padding: 0px 0px 30px 0px;
 }
 
-#projectdetail h2 span {
+/* Tool section (Common section) */
+#toolsdetail h2{
+    text-align: center;
+    color:purple;
+    margin-top: 100px;
+}
+#projectdetail h2 span, #toolsdetail h2 span{
     background-color: rgba(34, 32, 32, 0.479);
     border: 1px solid purple;
     border-radius: 10px;
@@ -580,6 +619,62 @@ main hr {
     padding: 4px;
 }
 
+/* Tools content */
+.box{
+    display:flex;
+    flex-wrap:wrap;
+    border-radius:15px;
+    background-color:rgb(158, 26, 158);
+    width:50vw;
+    height:fit-content;
+    margin-top:80px;
+    align-self:center;
+    justify-content:center;
+}
+.box .items{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:15px;
+    font-size:0.8rem;
+    font-weight: 600;
+    background-color:#000;
+    width:20%;
+    height:60px;
+    margin:25px;
+}
+.box #items1{
+    background-image:url("/Img/react.png");
+    background-repeat: no-repeat;
+    background-position:20px;
+}
+.box #items2{
+    background-image:url("/Img/nodejs.png");
+    background-repeat: no-repeat;
+    background-position:20px;
+}
+.box #items3{
+    background-image:url("/Img/mongodb.png");
+    background-repeat: no-repeat;
+    background-position:10px;
+}
+.box #items4{
+    background-image:url("/Img/javascript.png");
+    background-repeat: no-repeat;
+    background-position:10px;
+}
+.box #items5{
+    background-image:url("/Img/ServiceNow.png");
+    background-repeat: no-repeat;
+    background-position:10px;
+}
+.box #items6{
+    background-image:url("/Img/Jupyternotebook.png");
+    background-repeat: no-repeat;
+    background-position:10px;
+    background-size:20%;
+    
+}
 /* Footer */
 .footer {
     display: flex;
