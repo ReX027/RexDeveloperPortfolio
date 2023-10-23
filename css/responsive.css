@@ -4,14 +4,33 @@
 }
 
 .leftsection p {
-    width: 30%;
+    width: 40%;
     padding-left: 20px;
-    /* background-color:red; */
 }
 
-@media only screen and (min-width:1066px) and (max-width: 1279px) {
+.rightsection img {
+    width: 117%;
+}
+
+.carousel-item>img {
+    height: 90vh;
+}
+
+/* Toolchain box */
+.box {
+    width: 70vw;
+}
+
+@media only screen and (min-width:1115px) and (max-width: 1279px) {
     .leftsection p {
-        width: 36%;
+        width: 44%;
+    }
+
+    /* Hover menu of Project nav */
+    #project:hover {
+        #dropdowncontent {
+            display: none;
+        }
     }
 
     .firstsection .buttons {
@@ -20,76 +39,31 @@
     }
 }
 
-@media only screen and (min-width:937px) and (max-width: 1065px) {
-
+@media only screen and (min-width:1025px) and (max-width: 1114px) {
     .leftsection p {
-        width: 41%;
+        width: 48%;
     }
 
-    #element2 {
-        width: 66%;
+    /* Hover menu of Project nav */
+    #project:hover {
+        #dropdowncontent {
+            display: none;
+        }
     }
 
     .firstsection .buttons {
         position: relative;
-        left: 26%;
+        left: 20%;
     }
 }
 
-@media only screen and (min-width:852px) and (max-width:936px) {
-    #first img {
-        width: 103vw;
+@media only screen and (min-width:813px) and (max-width:1024px) {
+
+    /* offcanvas About */
+    .offcanvas {
+        --bs-offcanvas-width: 510px;
     }
 
-    nav ul {
-        width: 122%;
-    }
-
-    nav ul li {
-        margin: 0 6px;
-    }
-
-    .firstsection {
-        flex-direction: column;
-        margin: 50px 0;
-    }
-
-    .leftsection p {
-        width: 49%;
-    }
-
-    #element2 {
-        width: 75%;
-    }
-
-    .firstsection .buttons {
-        position: relative;
-        left: 70%;
-        top: 0;
-        /* font-size:1rem; */
-    }
-
-    .firstsection .buttons a {
-        font-size: 13px;
-    }
-
-    .rightsection {
-        width: 45%;
-    }
-
-    .rightsection img {
-        margin: 0 0;
-        width: 68%;
-        position: relative;
-        top: -62px;
-    }
-
-    .footer {
-        width: 103vw;
-    }
-}
-
-@media only screen and (min-width:700px) and (max-width:851px) {
     #first img {
         width: 103vw;
     }
@@ -102,97 +76,123 @@
         margin: 0 6px;
     }
 
+    #project:hover {
+        #dropdowncontent {
+            display: none;
+        }
+    }
+
     .firstsection {
         flex-direction: column;
-        margin: 50px 0;
     }
 
     .leftsection {
         width: 100%;
+        position: relative;
+        top: 10px;
     }
 
     .leftsection p {
-        width: 49%;
+        width: 40%;
     }
 
     #element2 {
-        width: 75%;
+        width: 55%;
+    }
+
+    #element3 {
+        width: 70%;
     }
 
     .firstsection .buttons {
-        position: relative;
-        left: 60%;
-        top: 0;
-        /* font-size:1rem; */
+        width: 40%;
     }
 
     .firstsection .buttons a {
         font-size: 13px;
     }
 
-    .rightsection {
-        width: 45%;
-    }
-
     .rightsection img {
-        margin: 0 0;
-        width: 73%;
+        height: 115%;
         position: relative;
-        top: -62px;
+        top: -42px;
+        left: 110px;
     }
 
+    /* Toolchain box */
+    .box {
+        width: 80vw;
+    }
+
+    .box .items {
+        margin: 17px;
+        width: 25%;
+    }
+
+    /* Footer */
     .footer {
         width: 103vw;
     }
 
-    /* .footer ul li{
-        margin:21px 0;
-    } */
     .footer ul li a {
         margin: 0 -15px;
     }
 }
 
-@media only screen and (min-width:625px) and (max-width:699px) {
+@media only screen and (min-width:700px) and (max-width:812px) {
 
-    /* #first img{
-        width:103vw;
-    } */
     nav {
         flex-direction: column;
         justify-content: center;
-    }
-
-    nav ul {
-        width: 103%;
+        height: 80px;
     }
 
     nav ul li {
         margin: 0 6px;
     }
 
+    nav .left {
+        position: relative;
+        top: 20px;
+    }
+
+    /* offcanvas About */
+    .offcanvas {
+        --bs-offcanvas-width: 380px;
+    }
+
+    #project:hover {
+        #dropdowncontent {
+            display: none;
+        }
+    }
+
     .firstsection {
         flex-direction: column;
-        margin: 70px 0;
     }
 
     .leftsection {
         width: 118%;
+        position: relative;
+        top: 40px;
     }
 
     .leftsection p {
-        width: 36%;
+        width: 40%;
     }
 
     #element2 {
         width: 75%;
     }
 
+    #element3 {
+        height: 29%;
+    }
+
     .firstsection .buttons {
         position: relative;
         left: 56%;
-        top: 19px;
-        /* font-size:1rem; */
+        top: 30px;
     }
 
     .firstsection .buttons a {
@@ -205,13 +205,17 @@
 
     .rightsection img {
         margin: 23px 0;
-        width: 92%;
-        position: relative;
-        /* top: -62px; */
+        width: 125%;
     }
 
-    .secondsection {
-        max-width: 83vw;
+    /* Toolchain box */
+    .box {
+        width: 80vw;
+    }
+
+    .box .items {
+        margin: 17px;
+        width: 30%;
     }
 
     .footer {
@@ -231,42 +235,60 @@
     }
 }
 
-@media screen and (max-width:624px) {
+@media only screen and (min-width:588px) and (max-width:699px) {
+
     nav {
         flex-direction: column;
         justify-content: center;
-    }
-
-    nav ul {
-        width: 103%;
+        height: 80px;
     }
 
     nav ul li {
         margin: 0 6px;
     }
 
+    nav .left {
+        position: relative;
+        top: 20px;
+    }
+
+    /* offcanvas About */
+    .offcanvas {
+        --bs-offcanvas-width: 380px;
+    }
+
+    #project:hover {
+        #dropdowncontent {
+            display: none;
+        }
+    }
+
     .firstsection {
         flex-direction: column;
-        margin: 70px 0;
     }
 
     .leftsection {
         width: 118%;
+        position: relative;
+        top: 40px;
     }
 
     .leftsection p {
-        width: 40%;
+        width: 47%;
     }
 
     #element2 {
         width: 75%;
     }
 
+    #element3 {
+        height: 29%;
+    }
+
     .firstsection .buttons {
         position: relative;
-        left: 48%;
-        top: 19px;
-        /* font-size:1rem; */
+        left: 46%;
+        top: 30px;
     }
 
     .firstsection .buttons a {
@@ -279,16 +301,20 @@
 
     .rightsection img {
         margin: 23px 0;
-        width: 92%;
-        position: relative;
-        /* top: -62px; */
+        width: 125%;
     }
 
-    .secondsection {
-        max-width: 83vw;
+    /* Toolchain box */
+    .box {
+        width: 80vw;
     }
 
-    .footer ul {
+    .box .items {
+        margin: 17px;
+        width: 39%;
+    }
+
+    .footer {
         flex-wrap: wrap;
     }
 
@@ -300,61 +326,68 @@
 
     .footer ul li {
         margin: 21px 6px;
-        width: 80%;
-    }
-    .fa-brands{
-        padding: 1px;
-    }
-    
-    .fa-regular{
-        padding:10px;
     }
 
-    
+    .footer ul li a {
+        padding: 0 18px;
+    }
 }
 
-@media screen and (max-width:548px) {
+@media only screen and (min-width:500px) and (max-width:587px) {
+
     nav {
         flex-direction: column;
         justify-content: center;
-    }
-
-    nav ul {
-        width: 103%;
+        height: 80px;
     }
 
     nav ul li {
         margin: 0 6px;
     }
 
+    nav .left {
+        position: relative;
+        top: 20px;
+    }
+
+    /* offcanvas About */
+    .offcanvas {
+        --bs-offcanvas-width: 380px;
+    }
+
+    #project:hover {
+        #dropdowncontent {
+            display: none;
+        }
+    }
+
     .firstsection {
         flex-direction: column;
-        margin: 70px 0;
     }
 
     .leftsection {
-        width: 140%;
+        width: 118%;
+        position: relative;
+        top: 40px;
+        right: 35px;
     }
 
     .leftsection p {
-        width: 40%;
+        width: 55%;
     }
 
     #element2 {
-        width: 60%;
+        width: 75%;
     }
 
     #element3 {
-        font-size: 1.2rem;
-        position: relative;
-        left: 144px;
+        height: 29%;
     }
 
     .firstsection .buttons {
         position: relative;
-        left: 40%;
-        top: 19px;
-        /* font-size:1rem; */
+        left: 46%;
+        top: 30px;
     }
 
     .firstsection .buttons a {
@@ -367,16 +400,20 @@
 
     .rightsection img {
         margin: 23px 0;
-        width: 92%;
-        position: relative;
-        /* top: -62px; */
+        width: 145%;
     }
 
-    .secondsection {
-        max-width: 83vw;
+    /* Toolchain box */
+    .box {
+        width: 80vw;
     }
 
-    .footer ul {
+    .box .items {
+        margin: 17px;
+        width: 39%;
+    }
+
+    .footer {
         flex-wrap: wrap;
     }
 
@@ -386,75 +423,207 @@
         align-items: center;
     }
 
-    .footer ul li {
-        margin: 21px 6px;
-        width: 80%;
-    }
-   
-    .fa-brands{
-        padding: 1px;
-    }
-    
-    .fa-regular{
-        padding:10px;
+    .footer ul {
+        flex-wrap: wrap;
     }
 
-  
+    .footer ul li:nth-child(2) a {
+        padding: 0 46px;
+    }
+
+    .footer ul li:nth-child(4) a {
+        padding: 0 55px;
+    }
 }
 
-@media screen and (max-width:490px) {
-  
+@media only screen and (min-width:412px) and (max-width:499px) {
+
     nav {
         flex-direction: column;
-        justify-content:space-around;
-        padding:10px 0;
-    }
-
-    nav ul {
-        width: 100%;
+        justify-content: center;
+        height: 80px;
     }
 
     nav ul li {
-        margin: 0 0;
+        margin: 0 6px;
     }
-    nav ul li a{
-        font-size:1rem;
+
+    nav ul li a {
+        letter-spacing: 0;
     }
+
+    nav .left {
+        position: relative;
+        top: 20px;
+    }
+
+    /* offcanvas About */
+    .offcanvas {
+        --bs-offcanvas-width: 380px;
+    }
+
+    #project:hover {
+        #dropdowncontent {
+            display: none;
+        }
+    }
+
     .firstsection {
         flex-direction: column;
-        margin: 70px 0;
     }
 
     .leftsection {
-        width: 140%;
+        width: 118%;
+        position: relative;
+        top: 40px;
+        right: 70px;
     }
 
     .leftsection p {
-        width: 45%;
+        width:59%;
+        font-size: 1.4rem;
     }
 
     #element2 {
-        width: 60%;
-        position: relative;
-        left:60px;
-        font-size:1.7rem;
+        width: 75%;
     }
 
     #element3 {
-        font-size: 1.2rem;
+        height: 29%;
+    }
+
+    .firstsection .buttons {
         position: relative;
-        left: 144px;
+        left: 46%;
+        top: 30px;
+    }
+
+    .firstsection .buttons a {
+        font-size: 13px;
+    }
+
+    .rightsection {
+        width: 45%;
+    }
+
+    .rightsection img {
+        margin: 23px -16px;
+        width: 174%;
+    }
+
+    /* Toolchain box */
+    .box {
+        width: 85vw;
+    }
+
+    .box .items {
+        width: 30%;
+        height: 32px;
+        justify-content: flex-end;
+        padding: 0 4px;
+        font-size: 0.6rem;
+    }
+
+    .box #items1 {
+        background-position: 10px;
+    }
+
+    .box #items2 {
+        background-position: 10px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .footer p {
+        font-size: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer ul {
+        flex-wrap: wrap;
+    }
+
+    .footer ul li:nth-child(2) a {
+        padding: 0 46px;
+    }
+
+    .footer ul li:nth-child(4) a {
+        padding: 0 55px;
+    }
+}
+
+@media only screen and (min-width:360px) and (max-width:411px) {
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        height: 80px;
+    }
+
+    nav ul li {
+        margin: 0 6px;
+    }
+
+    nav ul li a {
+        letter-spacing: 0;
+        padding: 15px 4px;
+        right: 11px;
+    }
+
+    nav .left {
+        position: relative;
+        top: 20px;
+        font-size: 1.3rem;
+    }
+
+    /* offcanvas About */
+    .offcanvas {
+        --bs-offcanvas-width: 380px;
+    }
+
+    #project:hover {
+        #dropdowncontent {
+            display: none;
+        }
+    }
+
+    .firstsection {
+        flex-direction: column;
+    }
+
+    .leftsection {
+        width: 118%;
+        position: relative;
+        top: 40px;
+        right: 85px;
+    }
+
+    .leftsection p {
+        width: 70%;
+        font-size: 1.4rem;
+    }
+
+    #element2 {
+        width: 75%;
+        font-size: 1.7rem;
+    }
+
+    #element3 {
+        height: 29%;
+        font-size: 1.1rem;
     }
 
     .firstsection .buttons {
         position: relative;
         left: 40%;
-        top: 19px;
-        /* font-size:1rem; */
+        top: 30px;
     }
 
     .firstsection .buttons a {
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .rightsection {
@@ -462,17 +631,32 @@
     }
 
     .rightsection img {
-        margin: 23px 0;
-        width: 92%;
-        position: relative;
-        /* top: -62px; */
+        margin: 23px -16px;
+        width: 174%;
     }
 
-    .secondsection {
-        max-width: 83vw;
+    /* Toolchain box */
+    .box {
+        width: 85vw;
     }
 
-    .footer ul {
+    .box .items {
+        width: 30%;
+        height: 32px;
+        justify-content: flex-end;
+        padding: 0 4px;
+        font-size: 0.6rem;
+    }
+
+    .box #items1 {
+        background-position: 10px;
+    }
+
+    .box #items2 {
+        background-position: 10px;
+    }
+
+    .footer {
         flex-wrap: wrap;
     }
 
@@ -482,182 +666,84 @@
         align-items: center;
     }
 
-    .footer ul li {
-        margin: 21px 6px;
-        width: 80%;
-    }
-    .footer ul li a{
-        padding: 0 35px;
-    }
-    .fa-brands{
-        padding: 1px;
-    }
-    
-    .fa-regular{
-        padding:10px;
+    .footer ul {
+        flex-wrap: wrap;
     }
 
-    
+    .footer ul li:nth-child(2) a {
+        padding: 0 46px;
+    }
+
+    .footer ul li:nth-child(4) a {
+        padding: 0 55px;
+    }
 }
-@media screen and (max-width:432px) {
-  
+@media only screen and (min-width:321px) and (max-width:359px) {
+
     nav {
         flex-direction: column;
         justify-content: center;
-        padding: 2px 0;
-    }
-
-    nav ul {
-        width: 100%;
+        height: 80px;
     }
 
     nav ul li {
-        margin: 0 0;
+        margin: 0 6px;
     }
-    nav ul li a{
-        font-size:1rem;
+
+    nav ul li a {
+        letter-spacing: 0;
+        padding: 15px 1px;
+        right: 11px;
+        font-size: 0.9rem;
+    }
+
+    nav .left {
+        position: relative;
+        top: 20px;
+        font-size: 1.3rem;
+    }
+
+    /* offcanvas About */
+    .offcanvas {
+        --bs-offcanvas-width: 380px;
+    }
+
+    #project:hover {
+        #dropdowncontent {
+            display: none;
+        }
     }
 
     .firstsection {
         flex-direction: column;
-        margin: 70px 0;
     }
 
     .leftsection {
-        width: 140%;
+        width: 118%;
+        position: relative;
+        top: 40px;
+        right: 85px;
     }
 
     .leftsection p {
-        width: 40%;
-        position: relative;
-        left: 101px;
-        font-size:1.3rem;
-    }
-
-    #element2 {
         width: 70%;
-        position: relative;
-        left:22px;
-        font-size:1.7rem;
-    }
-
-    #element3 {
         font-size: 1.2rem;
-        position: relative;
-        top: 10px;
-        left: 105px;
-    }
-
-    .firstsection .buttons {
-        position: relative;
-        left: 35%;
-        top: 19px;
-        /* font-size:1rem; */
-    }
-
-    .firstsection .buttons a {
-        font-size: 13px;
-    }
-
-    .rightsection {
-        width: 45%;
-    }
-
-    .rightsection img {
-        margin: 23px 0;
-        width: 92%;
-        position: relative;
-        /* top: -62px; */
-    }
-
-    .secondsection {
-        max-width: 83vw;
-    }
-
-    .footer ul {
-        flex-wrap: wrap;
-    }
-
-    .footer p {
-        font-size: 0.8rem;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer ul li {
-        margin: 21px 6px;
-        width: 80%;
-    }
-    .footer ul li a{
-        padding: 0 34px;
-    }
-    .footer ul li a{
-        padding: 0 35px;
-    }
-    .fa-brands{
-        padding: 1px;
-    }
-    
-    .fa-regular{
-        padding:10px;
-    }
-    
-}
-
-@media screen and (max-width:396px) {
-  
-    nav {
-        flex-direction: column;
-        justify-content: center;
-        padding: 2px 0;
-    }
-
-    nav ul {
-        width: 100%;
-    }
-
-    nav ul li {
-        margin: -6px -3px;
-    }
-    nav ul li a{
-        font-size:0.9rem;
-    }
-
-    .firstsection {
-        flex-direction: column;
-        margin: 70px 0;
-    }
-
-    .leftsection {
-        width: 140%;
-    }
-
-    .leftsection p {
-        width: 40%;
-        position: relative;
-        left: 90px;
-        font-size:1.1rem;
     }
 
     #element2 {
-        width: 70%;
-        position: relative;
-        left:22px;
-        font-size:1.5rem;
+        width: 75%;
+        font-size: 1.7rem;
     }
 
     #element3 {
+        height: 29%;
         font-size: 1.1rem;
-        position: relative;
-        top: 10px;
-        left: 105px;
     }
 
     .firstsection .buttons {
         position: relative;
-        left: 35%;
-        top: 19px;
-        /* font-size:1rem; */
+        left: 40%;
+        top: 30px;
     }
 
     .firstsection .buttons a {
@@ -669,38 +755,176 @@
     }
 
     .rightsection img {
-        margin: 23px 0;
-        width: 92%;
-        position: relative;
-        /* top: -62px; */
+        margin: 23px -36px;
+        width: 208%;
     }
 
-    .secondsection {
-        max-width: 83vw;
+    /* Toolchain box */
+    .box {
+        width: 85vw;
+    }
+
+    .box .items {
+        width: 30%;
+        height: 32px;
+        justify-content: flex-end;
+        padding: 0 4px;
+        font-size: 0.55rem;
+        background-size: 15%;
+    }
+
+    .box #items1 {
+        background-position: 10px;
+    }
+
+    .box #items2 {
+        background-position: 10px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
+        flex-direction: column;
+        align-items: center;
     }
 
     .footer ul {
         flex-wrap: wrap;
     }
 
+    .footer ul li:nth-child(2) a {
+        padding: 0 46px;
+    }
+
+    .footer ul li:nth-child(4) a {
+        padding: 0 55px;
+    }
+}
+@media only screen and (min-width:200px) and (max-width:320px) {
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        height: 80px;
+    }
+
+    nav ul li {
+        margin: 0 6px;
+    }
+
+    nav ul li a {
+        letter-spacing: 0;
+        padding: 15px 0px;
+        right: 22px;
+        font-size: 0.75rem;
+    }
+
+    nav .left {
+        position: relative;
+        top: 20px;
+        font-size: 1.1rem;
+    }
+
+    /* offcanvas About */
+    .offcanvas {
+        --bs-offcanvas-width: 380px;
+    }
+
+    #project:hover {
+        #dropdowncontent {
+            display: none;
+        }
+    }
+
+    .firstsection {
+        flex-direction: column;
+    }
+
+    .leftsection {
+        width: 118%;
+        position: relative;
+        top: 40px;
+        right: 85px;
+    }
+
+    .leftsection p {
+        width: 65%;
+        font-size: 1rem;
+    }
+
+    #element2 {
+        width: 75%;
+        font-size: 1.5rem;
+    }
+
+    #element3 {
+        height: 29%;
+        font-size: 1rem;
+    }
+
+    .firstsection .buttons {
+        position: relative;
+        left: 40%;
+        top: 30px;
+    }
+
+    .firstsection .buttons a {
+        font-size: 10px;
+    }
+
+    .rightsection {
+        width: 45%;
+    }
+
+    .rightsection img {
+        margin: 23px -36px;
+        width: 208%;
+    }
+
+    /* Toolchain box */
+    .box {
+        width: 85vw;
+    }
+
+    .box .items {
+        width: 28%;
+        height: 32px;
+        justify-content: flex-end;
+        padding: 0 4px;
+        font-size: 0.5rem;
+        background-size: 12%;
+    }
+
+    .box #items1 {
+        background-position: 10px;
+    }
+
+    .box #items2 {
+        background-position: 10px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
     .footer p {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         flex-direction: column;
         align-items: center;
     }
-    
-    .footer ul li {
-        margin: 21px 6px;
-        width: 80%;
+
+    .footer ul {
+        flex-wrap: wrap;
     }
-    .footer ul li a{
-        padding: 0 35px;
+
+    .footer ul li:nth-child(2) a {
+        padding: 0 46px;
     }
-    .fa-brands{
-        padding: 1px;
-    }
-    
-    .fa-regular{
-        padding:10px;
+
+    .footer ul li:nth-child(4) a {
+        padding: 0 55px;
     }
 }

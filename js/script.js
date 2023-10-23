@@ -19,7 +19,8 @@ function fun() {
 }
 
 document.getElementById("linkedinlink").addEventListener("click", function() {
-  window.location.href = "https://www.linkedin.com/in/tusharvaid/"; // Replace with the URL you want to link to
+  // window.location.href = "https://www.linkedin.com/in/tusharvaid/"; 
+     window.open("https://www.linkedin.com/in/tusharvaid/","_blank");
 });
 
 // Animation in HomePage

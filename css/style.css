@@ -54,7 +54,6 @@ nav ul li {
 
 nav ul li a {
     color: #fff;
-    text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.1em;
     display: inline-block;
@@ -240,7 +239,7 @@ nav ul li a:hover {
 }
 
 .leftsection p {
-    width: 30%;
+    width: 35%;
     padding: 2px;
     background-color: #1d225a54;
     border-radius: 16px;
@@ -557,30 +556,26 @@ main hr {
 }
 
 /* Projexts carousel */
+
 #carouselExampleCaptions {
-    display: flex;
-    height: 88vh;
-    width: 100vw;
+    position: relative;
 }
 
 .carousel-item>img {
     filter: blur(8px);
 }
 
-.carousel-control-prev i {
+.carousel-control-prev i,.carousel-control-next i  {
     font-size: 4em;
 }
 
-.carousel-control-next i {
-    font-size: 4em;
-}
-
-.carousel-img {
-    position: absolute;
-    top: 15%;
-    left: 25%;
-    z-index: 100;
-    width: 48rem;
+.card.carousel-img {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    max-width:90%;
+   
 }
 
 .card-body {
@@ -635,7 +630,7 @@ main hr {
     display:flex;
     justify-content:center;
     align-items:center;
-    border-radius:15px;
+    border-radius: 9px;
     font-size:0.8rem;
     font-weight: 600;
     background-color:#000;
@@ -680,7 +675,6 @@ main hr {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    margin: 100px 0;
     align-items: center;
     justify-content: center;
     background: linear-gradient(to top, #22283500, #222835);
