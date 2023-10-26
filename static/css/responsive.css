@@ -434,6 +434,19 @@
     .footer ul li:nth-child(4) a {
         padding: 0 55px;
     }
+    .fa-github{
+        position: relative;
+        left:13px;
+    }
+    .fa-x-twitter{
+        position: relative;
+        left:14px;
+    }
+    .fa-regular{
+        position: relative;
+        left:19px;
+    }
+
 }
 
 @media only screen and (min-width:412px) and (max-width:499px) {
@@ -552,6 +565,18 @@
 
     .footer ul li:nth-child(4) a {
         padding: 0 55px;
+    }
+    .fa-github{
+        position: relative;
+        left:13px;
+    }
+    .fa-x-twitter{
+        position: relative;
+        left:14px;
+    }
+    .fa-regular{
+        position: relative;
+        left:19px;
     }
 }
 
@@ -676,6 +701,18 @@
 
     .footer ul li:nth-child(4) a {
         padding: 0 55px;
+    }
+    .fa-github{
+        position: relative;
+        left:13px;
+    }
+    .fa-x-twitter{
+        position: relative;
+        left:14px;
+    }
+    .fa-regular{
+        position: relative;
+        left:19px;
     }
 }
 @media only screen and (min-width:321px) and (max-width:359px) {
@@ -802,6 +839,18 @@
     .footer ul li:nth-child(4) a {
         padding: 0 55px;
     }
+    .fa-github{
+        position: relative;
+        left:13px;
+    }
+    .fa-x-twitter{
+        position: relative;
+        left:14px;
+    }
+    .fa-regular{
+        position: relative;
+        left:19px;
+    }
 }
 @media only screen and (min-width:200px) and (max-width:320px) {
 
@@ -926,5 +975,17 @@
 
     .footer ul li:nth-child(4) a {
         padding: 0 55px;
+    }
+    .fa-github{
+        position: relative;
+        left:13px;
+    }
+    .fa-x-twitter{
+        position: relative;
+        left:14px;
+    }
+    .fa-regular{
+        position: relative;
+        left:19px;
     }
 }

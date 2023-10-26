@@ -1,0 +1,48 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Submitted
+  style.
+    * {
+    padding: 0;
+    margin: 0;
+    }
+    body {
+    overflow: hidden;
+    }
+    .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    }
+    .container img {
+    width: 100px;
+    height: 100px;
+    padding-bottom: 10px;
+    }
+    .container h5 {
+    font-weight: 300;
+    padding-top: 6px;
+    }
+    #footer-redirect button {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 8px;
+    margin-left: 8px;
+    font-size: 0.8rem;
+    width: 180px;
+    }
+.container
+  img(src='../static/Img/checked.png' alt='')
+  h2 Thank You!
+  h5 Your submission has been received.
+#footer-redirect
+  button#redirect-btn(onclick='redirectToIndex()')
+    | Redirectiong in 
+    span#countdown 3
+    |  seconds
+script(src='../static/js/submit.js')

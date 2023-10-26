@@ -133,7 +133,7 @@ nav ul li a:hover {
     position: absolute;
     display: none;
     right: 14%;
-    width: 70vw;
+    width: 52vw;
     height: 20rem;
 }
 
@@ -151,7 +151,7 @@ nav ul li a:hover {
 #dropdowncontent .rowcontent {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 95%;
     height: 100%;
 }
 
@@ -639,32 +639,32 @@ main hr {
     margin:25px;
 }
 .box #items1{
-    background-image:url("/Img/react.png");
+    background-image:url("../Img/react.png");
     background-repeat: no-repeat;
     background-position:20px;
 }
 .box #items2{
-    background-image:url("/Img/nodejs.png");
+    background-image:url("../Img/nodejs.png");
     background-repeat: no-repeat;
     background-position:20px;
 }
 .box #items3{
-    background-image:url("/Img/mongodb.png");
+    background-image:url("../Img/mongodb.png");
     background-repeat: no-repeat;
     background-position:10px;
 }
 .box #items4{
-    background-image:url("/Img/javascript.png");
+    background-image:url("..//Img/javascript.png");
     background-repeat: no-repeat;
     background-position:10px;
 }
 .box #items5{
-    background-image:url("/Img/ServiceNow.png");
+    background-image:url("../Img/ServiceNow.png");
     background-repeat: no-repeat;
     background-position:10px;
 }
 .box #items6{
-    background-image:url("/Img/Jupyternotebook.png");
+    background-image:url("../Img/Jupyternotebook.png");
     background-repeat: no-repeat;
     background-position:10px;
     background-size:20%;
@@ -704,15 +704,18 @@ main hr {
 
 
 .footer ul li {
-
     display: flex;
-
+    cursor: pointer;
     height: 60px;
     align-items: center;
-
     margin: 21px 12px;
 }
-
+.footer ul li a{
+    height:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 .footer ul li:nth-child(1) {
     background-color: #333;
 }
@@ -739,8 +742,12 @@ main hr {
     color: white;
 }
 
-.footer ul li i {
+.footer ul li a i {
     margin-right: 15px;
+}
+.fa-brands,.fa-regular{
+    position: relative;
+    left:10px;
 }
 
 .footer p {
