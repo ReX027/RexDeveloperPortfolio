@@ -11,112 +11,113 @@ head
   link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
   link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap' rel='stylesheet')
 script(src='https://kit.fontawesome.com/9c5fe3b840.js' crossorigin='anonymous')
-#second.sec
-  nav#navbar
-    .left(onclick='fun()') Tushar&apos;s Portfolio
-    .right
-      ul
-        li
-          a(href='/') Home
-        li
-          a.text-light(href='/' data-bs-toggle='offcanvas' data-bs-target='#offcanvasWithBothOptions' aria-controls='offcanvasWithBothOptions') About
-          #offcanvasWithBothOptions.offcanvas.offcanvas-start.text-bg-dark(data-bs-scroll='true' tabindex='-1' aria-labelledby='offcanvasWithBothOptionsLabel')
-            .offcanvas-header
-              h3#offcanvasWithBothOptionsLabel.offcanvas-title
-                | About Me
-              button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
-            .offcanvas-subheading
-              h5 Get to know me!
-            .offcanvas-body
-              p
-                | Hello and welcome to my portfolio! I&apos;m 
-                strong.highlightabouttext
-                  | Tushar
-                  | Vaid
-                | , a passionate and driven student on a journey to learn and create.
-              p
-                | I&apos;m currently pursuing my Bachelor of Engineering in 
-                strong.highlightabouttext Electronics and Communication Engineering
-                |  at
-                |                                     Thapar Institute of Engineering &amp; Technology. This website is a reflection of my
-                |                                     dedication to learning, my love for 
-                strong.highlightabouttext
-                  | web
-                  | development
-                | , and my eagerness to share my projects and experiences
-                |                                     with the world.
-              p
-                | I&apos;m open to 
-                strong.highlightabouttext Job
-                |  opportunities where I can
-                |                                     contribute, learn and grow. If you have a good opportunity that matches my skills
-                |                                     and experience then don&apos;t hesitate to contact me. Feel free to Connect or Follow me
-                |                                     on my 
-                span#linkedinlink Linkedin
-                | .
-              a#offcanvasbtn(href='/contact' type='button') Contact
-        li#project
-          a(href='#projectdetail') Projects
-          #dropdowncontent
-            .rowcontent
-              .cardcontent
-                img.card-img-top(src='../static/Img/TextUtils.png' alt='...')
-                .card-bodycontent
-                  h3.card-titlecontent TextUtils
-                  a.btn(href='http://64.227.176.178')
-                    | Visit 
-                    i.fa-solid.fa-arrow-up-right-from-square
-              .cardcontent
-                img.card-img-top(src='../static/Img/PGLife.png' alt='...')
-                .card-bodycontent
-                  h3.card-titlecontent PG Life
-                  a.btn(href='http://146.190.9.56/')
-                    | Visit 
-                    i.fa-solid.fa-arrow-up-right-from-square
-              .cardcontent
-                img.card-img-top(src='../static/Img//Gym.png' alt='...')
-                .card-bodycontent
-                  h3.card-titlecontent Gym Website
-                  a.btn(href='http://64.227.176.178:3000/')
-                    | Visit 
-                    i.fa-solid.fa-arrow-up-right-from-square
-        li
-          a(href='/contact') Contact Me
-  main#main
-    section.firstsection
-      .leftsection.reveal
-        p
+nav#navbar
+  .left(onclick='fun()') Tushar&apos;s Portfolio
+  .right
+    ul
+      li
+        a(href='/') Home
+      li
+        a#abouttag.text-light(href='/' data-bs-toggle='offcanvas' data-bs-target='#offcanvasWithBothOptions' aria-controls='offcanvasWithBothOptions') About
+        #offcanvasWithBothOptions.offcanvas.offcanvas-start.text-bg-dark(data-bs-scroll='true' tabindex='-1' aria-labelledby='offcanvasWithBothOptionsLabel')
+          .offcanvas-header
+            h3#offcanvasWithBothOptionsLabel.offcanvas-title
+              | About Me
+            button.btn-close(type='button' style="background-color:white,border:none" data-bs-dismiss='offcanvas' aria-label='Close')
+          .offcanvas-subheading
+            h5 Get to know me!
+          .offcanvas-body
+            p
+              | Hello and welcome to my portfolio! I&apos;m 
+              strong.highlightabouttext
+                | Tushar
+                | Vaid
+              | , a passionate and driven student on a journey to learn and create.
+            p
+              | I&apos;m currently pursuing my Bachelor of Engineering in 
+              strong.highlightabouttext Electronics and Communication Engineering
+              |  at
+              |                                     Thapar Institute of Engineering &amp; Technology. This website is a reflection of my
+              |                                     dedication to learning, my love for 
+              strong.highlightabouttext
+                | web
+                | development
+              | , and my eagerness to share my projects and experiences
+              |                                     with the world.
+            p
+              | I&apos;m open to 
+              strong.highlightabouttext Job
+              |  opportunities where I can
+              |                                     contribute, learn and grow. If you have a good opportunity that matches my skills
+              |                                     and experience then don&apos;t hesitate to contact me. Feel free to Connect or Follow me
+              |                                     on my 
+              span#linkedinlink Linkedin
+              | .
+            a#offcanvasbtn(href='/contact' type='button') Contact
+      li#project
+        a(href='#Project') Projects
+        #dropdowncontent
+          .rowcontent
+            .cardcontent
+              img.card-img-top(src='../static/Img/TextUtils.png' alt='...')
+              .card-bodycontent
+                h3.card-titlecontent TextUtils
+                a.btn(href='http://64.227.176.178')
+                  | Visit 
+                  i.fa-solid.fa-arrow-up-right-from-square
+            .cardcontent
+              img.card-img-top(src='../static/Img/PGLife.png' alt='...')
+              .card-bodycontent
+                h3.card-titlecontent PG Life
+                a.btn(href='http://146.190.9.56/')
+                  | Visit 
+                  i.fa-solid.fa-arrow-up-right-from-square
+            .cardcontent
+              img.card-img-top(src='../static/Img//Gym.png' alt='...')
+              .card-bodycontent
+                h3.card-titlecontent Gym Website
+                a.btn(href='http://64.227.176.178:3000/')
+                  | Visit 
+                  i.fa-solid.fa-arrow-up-right-from-square
+      li
+        a(href='/contact') Contact Me
+main#main
+  section.firstsection
+    .leftsection#reveal1
+      p
+        span#element1
           i.fa-solid.fa-hand-peace
           | Hi There! I&apos;m 
           span#purple Tushar
-        span#element2
-        span#element3.reveal
-        .buttons.reveal
-          a#btn2(href='https://drive.google.com/file/d/1dwXZw4ayMOtmaxeDcKcKe7az8C7mK4Qc/view?usp=sharing' target='_blank')
-            span
-            span
-            span
-            span
-            |                             Resume
-          a#btn3(href='https://github.com/ReX027' target='_blank')
-            span
-            span
-            span
-            span
-            |                             Visit Github
-      .rightsection.reveal2
-        img(src='../static/Img/bg.png')
-    hr
-    section.secondsection
-      #projectdetail
-        h2
-          span Project Details
-      #carouselExampleCaptions.carousel.slide
-        .carousel-inner
-          .carousel-item.active
-            img.d-block.w-100(src='../static/Img/TextUtils.png' alt='...')
-            .card.carousel-img
-              img.card-img-top(src='../static/Img/TextUtils.png' alt='...')
+      span#element2
+      span#element3
+      .buttons
+        a#btn2(href='https://drive.google.com/file/d/1dwXZw4ayMOtmaxeDcKcKe7az8C7mK4Qc/view?usp=sharing' target='_blank')
+          span
+          span
+          span
+          span
+          |                             Resume
+        a#btn3(href='https://github.com/ReX027' target='_blank')
+          span
+          span
+          span
+          span
+          |                             Visit Github
+    .rightsection#reveal2
+      img(src='../static/Img/bg.png')
+  hr
+  section.secondsection
+    #Project
+      h2
+        span Project Details
+    .carousel.slide#carouselExample
+      .carousel-inner
+        .carousel-item.active
+          img.d-block.w-100(src='../static/Img/TextUtils.png' alt='...')
+          .card.carousel-img
+            img.card-img-top(src='../static/Img/TextUtils.png' alt='...')
+            .card.carousel-card  
               .card-body
                 h5.card-title
                   | TextUtils 
@@ -127,10 +128,11 @@ script(src='https://kit.fontawesome.com/9c5fe3b840.js' crossorigin='anonymous')
                 a.btn(href='http://64.227.176.178')
                   | Visit 
                   i.fa-solid.fa-arrow-up-right-from-square
-          .carousel-item
-            img.d-block.w-100(src='../static/Img//PGLife.png' alt='...')
-            .card.carousel-img
-              img.card-img-top(src='../static/Img/PGLife.png' alt='...')
+        .carousel-item
+          img.d-block.w-100(src='../static/Img//PGLife.png' alt='...')
+          .card.carousel-img
+            img.card-img-top(src='../static/Img/PGLife.png' alt='...')
+            .card.carousel-card
               .card-body
                 h5.card-title
                   | PG Life 
@@ -141,10 +143,11 @@ script(src='https://kit.fontawesome.com/9c5fe3b840.js' crossorigin='anonymous')
                 a.btn(href='http://146.190.9.56/')
                   | Visit 
                   i.fa-solid.fa-arrow-up-right-from-square
-          .carousel-item
-            img.d-block.w-100(src='../static/Img/Gym.png' alt='...')
-            .card.carousel-img
-              img.card-img-top(src='../static/Img/Gym.png' alt='...')
+        .carousel-item
+          img.d-block.w-100(src='../static/Img/Gym.png' alt='...')
+          .card.carousel-img
+            img.card-img-top(src='../static/Img/Gym.png' alt='...')
+            .card.carousel-card
               .card-body
                 h5.card-title
                   | GYM 
@@ -155,46 +158,46 @@ script(src='https://kit.fontawesome.com/9c5fe3b840.js' crossorigin='anonymous')
                 a.btn(href='http://64.227.176.178:3000/')
                   | Visit 
                   i.fa-solid.fa-arrow-up-right-from-square
-        button.carousel-control-prev(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide='prev')
-          i.fa-solid.fa-hand-point-left.fa-2xl.carousel-control(aria-hidden='true' style='color: #c410d1;')
-        button.carousel-control-next(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide='next')
-          i.fa-solid.fa-hand-point-right.fa-2xl.carousel-control(aria-hidden='true' style='color: #c410d1;')
-      #toolsdetail
-        h2
-          span Toolchain
-      .box
-        #items1.items React
-        #items2.items Node
-        #items3.items MongoDB
-        #items4.items Javascript
-        #items5.items ServiceNow
-        #items6.items Notebook
-  footer
-    .footer
-      h3 Connect With Me
-      ul
-        li
-          a(href='https://github.com/ReX027' target='_blank') 
-            | Github
-            i.fa-brands.fa-github
-        li
-          a(href='https://www.linkedin.com/in/tusharvaid/' target='_blank') 
-            | Linkedin
-            i.fa-brands.fa-linkedin
-        li
-          a(href='https://twitter.com/TusharV04843601' target='_blank') 
-            | Twitter
-            i.fa-brands.fa-x-twitter
-        li
-          a(href='mailto:your-tushar.vaid027@gmail.com' target="_blank")
-            | Email
-            i.fa-regular.fa-envelope
-      p
-        | Built from scratch 
-        img(src='../static/Img/heart.png' alt='...' loading='lazy')
-        |  &copy;
-        |                     Copyright
-        |                     2023 @Rex All rights Reserved
+      button.carousel-control-prev(type='button' data-bs-target='#carouselExample' data-bs-slide='prev')
+        i.fa-solid.fa-hand-point-left.fa-2xl.carousel-control(aria-hidden='true' style='color: #c410d1;')
+      button.carousel-control-next(type='button' data-bs-target='#carouselExample' data-bs-slide='next')
+        i.fa-solid.fa-hand-point-right.fa-2xl.carousel-control(aria-hidden='true' style='color: #c410d1;')
+    #toolsdetail
+      h2
+        span Toolchain
+    .box
+      #items1.items React
+      #items2.items Node
+      #items3.items MongoDB
+      #items4.items Javascript
+      #items5.items ServiceNow
+      #items6.items Notebook
+footer
+  .footer
+    h3 Connect With Me
+    ul
+      li
+        a(href='https://github.com/ReX027' target='_blank') 
+          | Github
+          i.fa-brands.fa-github
+      li
+        a(href='https://www.linkedin.com/in/tusharvaid/' target='_blank') 
+          | Linkedin
+          i.fa-brands.fa-linkedin
+      li
+        a(href='https://twitter.com/TusharV04843601' target='_blank') 
+          | Twitter
+          i.fa-brands.fa-x-twitter
+      li
+        a(href='mailto:your-tushar.vaid027@gmail.com' target="_blank")
+          | Email
+          i.fa-regular.fa-envelope
+    p
+      | Built from scratch 
+      img(src='../static/Img/heart.png' alt='...' loading='lazy')
+      |  &copy;
+      |                     Copyright
+      |                     2023 @Rex All rights Reserved
 script(src='https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js')
 script.
   var typed2 = new Typed('#element2', {

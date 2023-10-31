@@ -12,7 +12,8 @@ script(src='https://kit.fontawesome.com/9c5fe3b840.js' crossorigin='anonymous')
   header
     nav
       ul
-        li#left Rex&apos;s Portfolio
+        li#left
+          a(href='/', alt='') Tushar&apos;s Portfolio
         li#right
           a(href='/')
             i.fa-regular.fa-circle-xmark.fa-xl
@@ -20,24 +21,26 @@ script(src='https://kit.fontawesome.com/9c5fe3b840.js' crossorigin='anonymous')
 #section
   section
     h3 Thanks for taking the time to reach out. How can I help you today?
-    form(action='/submit' method='post' id='contactform' novalidate)
-      .inputbox
-        i.fa-regular.fa-user
-        input#name(type='text' name='name' required data-error-message="Please provide a valid name" autocomplete="off")
-        label(for='Name') Name:
-        .popover(data-field='name')
-      .inputbox
-        i.fa-regular.fa-envelope
-        input#email(type='text' name='email' required data-error-message="Invalid email" autocomplete="off")
-        label(for='Email') Email:
-        .popover(data-field='email')
-      .mytextarea
-        textarea#text(name='message' cols='30' rows='5' required data-error-message="Please enter your message" autocomplete="off")
-        label(for='message') Message:
-        .popover(data-field='text')
-      .forget
-        label(for='')
-          input(type='checkbox')
-          | Subscribe me
-      button(type="submit") Submit
+    form(action='/submit' method='post' id='contactform' validate)
+      #container
+        .inputbox#input1
+          i.fa-regular.fa-user
+          input#name(type='text' name='name' required data-error-message="Please enter a valid name" autocomplete="off")
+          label(for='Name') Name:
+          .popover(data-field='name')
+        .inputbox#input2
+          i.fa-regular.fa-envelope
+          input#email(type='text' name='email' required data-error-message="Please enter a valid email" autocomplete="off")
+          label(for='Email') Email:
+          .popover(data-field='email')
+        .mytextarea
+          textarea#text(name='message' cols='30' rows='5' required minlength="0" maxlength="100" data-error-message="Please enter your message" autocomplete="off")
+          label(for='message') Message:
+          .popover(data-field='text')
+        .forget
+          label(for='')
+            input(type='checkbox')
+            | Subscribe me
+        .button 
+          button(type="submit") Submit
 script(src='../static/js/contact.js')

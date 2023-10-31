@@ -1,11 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-}
-
-.leftsection p {
-    width: 40%;
-    padding-left: 20px;
+    scroll-behavior: smooth;
 }
 
 .rightsection img {
@@ -23,13 +19,23 @@
 
 @media only screen and (min-width:1115px) and (max-width: 1279px) {
     .leftsection p {
-        width: 44%;
+        width: 70%;
     }
 
     /* Hover menu of Project nav */
     #project:hover {
-        #dropdowncontent {
-            display: none;
+        #dropdowncontent .rowcontent {
+            width: 84%;
+            height: 107%;
+        }
+
+        #dropdowncontent .rowcontent .cardcontent img {
+            height: 50%;
+            margin-top: 10px;
+        }
+
+        .card-titlecontent {
+            font-size: 1.3rem;
         }
     }
 
@@ -39,15 +45,25 @@
     }
 }
 
-@media only screen and (min-width:1025px) and (max-width: 1114px) {
+@media only screen and (min-width:1024px) and (max-width: 1114px) {
     .leftsection p {
-        width: 48%;
+        width: 60%;
     }
 
     /* Hover menu of Project nav */
     #project:hover {
-        #dropdowncontent {
-            display: none;
+        #dropdowncontent .rowcontent {
+            width: 84%;
+            height: 107%;
+        }
+
+        #dropdowncontent .rowcontent .cardcontent img {
+            height: 50%;
+            margin-top: 10px;
+        }
+
+        .card-titlecontent {
+            font-size: 1.3rem;
         }
     }
 
@@ -57,7 +73,7 @@
     }
 }
 
-@media only screen and (min-width:813px) and (max-width:1024px) {
+@media only screen and (min-width:813px) and (max-width:1023px) {
 
     /* offcanvas About */
     .offcanvas {
@@ -77,46 +93,77 @@
     }
 
     #project:hover {
-        #dropdowncontent {
-            display: none;
+        #dropdowncontent .rowcontent {
+            width: 84%;
+            height: 107%;
+        }
+
+        #dropdowncontent .rowcontent .cardcontent img {
+            height: 50%;
+            margin-top: 10px;
+        }
+
+        .card-titlecontent {
+            font-size: 1.1rem;
         }
     }
 
     .firstsection {
         flex-direction: column;
+        height: 128vh;
     }
 
     .leftsection {
         width: 100%;
         position: relative;
-        top: 10px;
+        top: 0px;
+        padding: 60px;
     }
 
     .leftsection p {
-        width: 40%;
+        width: 86%;
+        position: relative;
+        left: 0px;
     }
 
     #element2 {
-        width: 55%;
+        position: relative;
+        left: 0px;
+        margin-left: 0;
     }
 
     #element3 {
+        position: relative;
+        left: 0px;
         width: 70%;
+        height: 6rem;
+    }
+
+    .reveal2.active {
+        position: relative;
+        bottom: 90px;
     }
 
     .firstsection .buttons {
         width: 40%;
+        top: 46px;
+        position: relative;
+        left: 15%;
     }
 
     .firstsection .buttons a {
         font-size: 13px;
     }
 
+
     .rightsection img {
         height: 115%;
         position: relative;
-        top: -42px;
-        left: 110px;
+        padding-right: 0;
+    }
+
+    main hr {
+        margin: 10px 50px;
     }
 
     /* Toolchain box */
@@ -129,6 +176,11 @@
         width: 25%;
     }
 
+    .carousel-control-next,
+    .carousel-control-prev {
+        font-size: 1.8rem;
+    }
+
     /* Footer */
     .footer {
         width: 103vw;
@@ -139,12 +191,16 @@
     }
 }
 
-@media only screen and (min-width:700px) and (max-width:812px) {
+@media only screen and (min-width:600px) and (max-width:812px) {
 
     nav {
         flex-direction: column;
         justify-content: center;
         height: 80px;
+    }
+
+    nav ul {
+        padding-right: 41px;
     }
 
     nav ul li {
@@ -156,43 +212,62 @@
         top: 20px;
     }
 
+    #project:hover {
+        #dropdowncontent .rowcontent {
+            width: 84%;
+            height: 107%;
+        }
+
+        #dropdowncontent .rowcontent .cardcontent img {
+            height: 50%;
+            margin-top: 10px;
+        }
+
+        .card-titlecontent {
+            font-size: 1rem;
+        }
+    }
+
     /* offcanvas About */
     .offcanvas {
         --bs-offcanvas-width: 380px;
     }
 
-    #project:hover {
-        #dropdowncontent {
-            display: none;
-        }
-    }
-
     .firstsection {
         flex-direction: column;
+        height: 128vh;
     }
 
     .leftsection {
-        width: 118%;
+        width: 100%;
         position: relative;
-        top: 40px;
+        top: 0px;
+        padding: 60px;
     }
 
     .leftsection p {
-        width: 40%;
+        width: 76%;
+        left: 0px;
     }
 
     #element2 {
-        width: 75%;
+        position: relative;
+        left: 0px;
+        margin-left: 0;
+        width: 61vh;
     }
 
     #element3 {
-        height: 29%;
+        width: 100%;
+        left: 0px;
+        height: 6rem;
     }
 
     .firstsection .buttons {
+        width: 80%;
+        top: 46px;
         position: relative;
-        left: 56%;
-        top: 30px;
+        left: 15%;
     }
 
     .firstsection .buttons a {
@@ -204,11 +279,65 @@
     }
 
     .rightsection img {
-        margin: 23px 0;
-        width: 125%;
+        width: 149%;
+        padding-left: 0;
+        height: 110%;
+        margin: 0px -40px;
+    }
+
+    .reveal2.active {
+        position: relative;
+        bottom: 117px;
+    }
+
+    main hr {
+        margin: 10px 50px;
+    }
+
+    .carousel-inner {
+        width: 100% !important;
+        height: 80vh;
+    }
+
+    /* .carousel-item.active {
+        height: 80vh;
+    } */
+
+    .card-body {
+        height: 142px;
+    }
+
+    .card-body a {
+        width: 55%;
+    }
+
+    .card-body h5 {
+        font-size: 1rem;
+    }
+
+    .card-body h5 span {
+        font-size: 0.5rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 59px;
+        font-size: 1.2rem;
+    }
+
+
+    .card-body .btn {
+        font-size: 0.8rem;
     }
 
     /* Toolchain box */
+    #toolsdetail{
+        margin-top:0px;
+    }
     .box {
         width: 80vw;
     }
@@ -235,12 +364,16 @@
     }
 }
 
-@media only screen and (min-width:588px) and (max-width:699px) {
 
+@media only screen and (min-width:500px) and (max-width:599px) {
     nav {
         flex-direction: column;
         justify-content: center;
         height: 80px;
+    }
+
+    nav ul {
+        padding-right: 41px;
     }
 
     nav ul li {
@@ -254,12 +387,34 @@
 
     /* offcanvas About */
     .offcanvas {
-        --bs-offcanvas-width: 380px;
+        --bs-offcanvas-width: 300px;
+    }
+
+    .offcanvas-title {
+        font-size: 1.2rem;
+    }
+
+    .offcanvas-subheading h5 {
+        font-size: 1rem;
+    }
+
+    .offcanvas-body {
+        font-size: 0.8rem;
     }
 
     #project:hover {
-        #dropdowncontent {
-            display: none;
+        #dropdowncontent .rowcontent {
+            width: 84%;
+            height: 107%;
+        }
+
+        #dropdowncontent .rowcontent .cardcontent img {
+            height: 50%;
+            margin-top: 10px;
+        }
+
+        .card-titlecontent {
+            font-size: 1rem;
         }
     }
 
@@ -268,26 +423,38 @@
     }
 
     .leftsection {
-        width: 118%;
+        width: 100%;
         position: relative;
-        top: 40px;
+        top: 54px;
+        left: 0px;
     }
 
     .leftsection p {
-        width: 47%;
+        width: 75%;
+        left: 30px;
+    }
+
+    #element1 {
+        font-size: 1.4rem;
     }
 
     #element2 {
-        width: 75%;
+        width: 90%;
+        margin-left: 0px;
+        left: 35px;
+        font-size: 1.5rem;
     }
 
     #element3 {
         height: 29%;
+        left: 41px;
+        width: 80%;
+        font-size: 1.2rem;
     }
 
     .firstsection .buttons {
         position: relative;
-        left: 46%;
+        left: 6%;
         top: 30px;
     }
 
@@ -300,110 +467,60 @@
     }
 
     .rightsection img {
-        margin: 23px 0;
-        width: 125%;
+        width: 157%;
+        height: 117%;
+        margin: 0px -30px;
     }
 
-    /* Toolchain box */
-    .box {
-        width: 80vw;
+    main hr {
+        margin: 10px 15px;
     }
 
-    .box .items {
-        margin: 17px;
-        width: 39%;
+    .carousel-inner {
+        width: 100% !important;
+        height: 80vh;
     }
 
-    .footer {
-        flex-wrap: wrap;
-    }
-
-    .footer p {
-        font-size: 1rem;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer ul li {
-        margin: 21px 6px;
-    }
-
-    .footer ul li a {
-        padding: 0 18px;
-    }
-}
-
-@media only screen and (min-width:500px) and (max-width:587px) {
-
-    nav {
-        flex-direction: column;
-        justify-content: center;
-        height: 80px;
-    }
-
-    nav ul li {
-        margin: 0 6px;
-    }
-
-    nav .left {
-        position: relative;
-        top: 20px;
-    }
-
-    /* offcanvas About */
-    .offcanvas {
-        --bs-offcanvas-width: 380px;
-    }
-
-    #project:hover {
-        #dropdowncontent {
-            display: none;
-        }
-    }
-
-    .firstsection {
-        flex-direction: column;
-    }
-
-    .leftsection {
-        width: 118%;
-        position: relative;
-        top: 40px;
-        right: 35px;
-    }
-
-    .leftsection p {
+    .card-body a {
         width: 55%;
     }
 
-    #element2 {
-        width: 75%;
+    .card-body h5 {
+        font-size: 1rem;
     }
 
-    #element3 {
-        height: 29%;
+    .card-body h5 span {
+        font-size: 0.5rem;
     }
 
-    .firstsection .buttons {
-        position: relative;
-        left: 46%;
-        top: 30px;
+    .card-text {
+        font-size: 0.8rem;
     }
 
-    .firstsection .buttons a {
-        font-size: 13px;
+    .card-body .btn {
+        font-size: 0.6rem;
+        padding: 2px;
+        height: 19px;
     }
 
-    .rightsection {
-        width: 45%;
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 59px;
+        font-size: 1.2rem;
     }
 
-    .rightsection img {
-        margin: 23px 0;
-        width: 145%;
+    .carousel-control-next {
+        right: 4%;
+    }
+
+    .carousel-control-prev {
+        left: 4%;
     }
 
     /* Toolchain box */
+    #toolsdetail{
+        margin-top:0px;
+    }
     .box {
         width: 80vw;
     }
@@ -434,22 +551,30 @@
     .footer ul li:nth-child(4) a {
         padding: 0 55px;
     }
-    .fa-github{
+
+    .fa-github {
         position: relative;
-        left:13px;
+        left: 13px;
     }
-    .fa-x-twitter{
+
+    .fa-x-twitter {
         position: relative;
-        left:14px;
+        left: 14px;
     }
-    .fa-regular{
+
+    .fa-regular {
         position: relative;
-        left:19px;
+        left: 19px;
     }
 
 }
 
 @media only screen and (min-width:412px) and (max-width:499px) {
+    * {
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+    }
 
     nav {
         flex-direction: column;
@@ -457,8 +582,12 @@
         height: 80px;
     }
 
+    nav ul {
+        padding-right: 5px;
+    }
+
     nav ul li {
-        margin: 0 6px;
+        margin: 0 3px;
     }
 
     nav ul li a {
@@ -472,13 +601,19 @@
 
     /* offcanvas About */
     .offcanvas {
-        --bs-offcanvas-width: 380px;
+        --bs-offcanvas-width: 300px;
     }
 
-    #project:hover {
-        #dropdowncontent {
-            display: none;
-        }
+    .offcanvas-title {
+        font-size: 1.2rem;
+    }
+
+    .offcanvas-subheading h5 {
+        font-size: 1rem;
+    }
+
+    .offcanvas-body {
+        font-size: 0.8rem;
     }
 
     .firstsection {
@@ -486,33 +621,46 @@
     }
 
     .leftsection {
-        width: 118%;
+        width: 100%;
         position: relative;
-        top: 40px;
-        right: 70px;
+        top: 82px;
+        left: 0px;
     }
 
     .leftsection p {
-        width:59%;
-        font-size: 1.4rem;
+        width: 75%;
+        left: 30px;
+    }
+
+    #element1 {
+        font-size: 1.3rem;
     }
 
     #element2 {
-        width: 75%;
+        width: 90%;
+        margin-left: 0px;
+        left: 35px;
+        font-size: 1.3rem;
     }
+
 
     #element3 {
         height: 29%;
+        left: 41px;
+        width: 80%;
+        font-size: 1rem;
     }
 
     .firstsection .buttons {
         position: relative;
-        left: 46%;
+        left: 6%;
         top: 30px;
+        width: 350px;
     }
 
     .firstsection .buttons a {
         font-size: 13px;
+
     }
 
     .rightsection {
@@ -520,11 +668,68 @@
     }
 
     .rightsection img {
-        margin: 23px -16px;
-        width: 174%;
+        /* margin: 23px -16px;
+        width: 174%; */
+        width: 157%;
+        height: 117%;
+        margin: 0px -30px;
+    }
+
+    main hr {
+        margin: 0 22px;
+    }
+
+    #Project h2 span,
+    #toolsdetail h2 span {
+        font-size: 1.5rem;
+    }
+
+    .card.carousel-img {
+        top: 47%;
+        width: 55%;
+    }
+
+    .carousel-inner {
+        width: 100% !important;
+        height: 70vh;
+    }
+
+    .card-body a {
+        width: 55%;
+    }
+
+    .card-body h5 {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.65rem;
+    }
+
+    .card-body .btn {
+        font-size: 0.6rem;
+        padding: 2px;
+        height: 19px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 59px;
+        font-size: 1.1rem;
+    }
+
+    .carousel-control-next {
+        right: 4%;
+    }
+
+    .carousel-control-prev {
+        left: 4%;
     }
 
     /* Toolchain box */
+    #toolsdetail{
+        margin-top:0px;
+    }
     .box {
         width: 85vw;
     }
@@ -549,8 +754,12 @@
         flex-wrap: wrap;
     }
 
+    .footer h3 {
+        font-size: 1.5rem;
+    }
+
     .footer p {
-        font-size: 1rem;
+        font-size: 0.9rem;
         flex-direction: column;
         align-items: center;
     }
@@ -566,17 +775,20 @@
     .footer ul li:nth-child(4) a {
         padding: 0 55px;
     }
-    .fa-github{
+
+    .fa-github {
         position: relative;
-        left:13px;
+        left: 13px;
     }
-    .fa-x-twitter{
+
+    .fa-x-twitter {
         position: relative;
-        left:14px;
+        left: 14px;
     }
-    .fa-regular{
+
+    .fa-regular {
         position: relative;
-        left:19px;
+        left: 19px;
     }
 }
 
@@ -606,13 +818,25 @@
 
     /* offcanvas About */
     .offcanvas {
-        --bs-offcanvas-width: 380px;
+        --bs-offcanvas-width: 220px;
     }
 
-    #project:hover {
-        #dropdowncontent {
-            display: none;
-        }
+    .offcanvas-title {
+        font-size: 1.1rem;
+    }
+
+    .offcanvas-subheading h5 {
+        font-size: 0.95rem;
+    }
+
+    .offcanvas-body {
+        font-size: 0.7rem;
+    }
+
+    #offcanvasbtn {
+        position: relative;
+        left: -4px;
+        font-size: 0.5rem;
     }
 
     .firstsection {
@@ -620,31 +844,39 @@
     }
 
     .leftsection {
-        width: 118%;
+        width: 100%;
         position: relative;
-        top: 40px;
-        right: 85px;
+        top: 82px;
+        left: 0px;
     }
 
     .leftsection p {
-        width: 70%;
-        font-size: 1.4rem;
+        width: 74%;
+        left: 30px;
+    }
+
+    #element1 {
+        font-size: 1.3rem;
     }
 
     #element2 {
         width: 75%;
-        font-size: 1.7rem;
+        left: -39px;
+        font-size: 1.3rem;
     }
 
     #element3 {
         height: 29%;
-        font-size: 1.1rem;
+        font-size: 1rem;
+        width: 80%;
+        left: 44px;
     }
 
     .firstsection .buttons {
         position: relative;
-        left: 40%;
+        left: 6%;
         top: 30px;
+        width: 350px;
     }
 
     .firstsection .buttons a {
@@ -660,7 +892,61 @@
         width: 174%;
     }
 
+    main hr {
+        margin: 0 10px;
+    }
+
+    #Project h2 span,
+    #toolsdetail h2 span {
+        font-size: 1.3rem;
+    }
+
+    .card.carousel-img {
+        top: 47%;
+        width: 55%;
+    }
+
+    .carousel-inner {
+        width: 100% !important;
+        height: 70vh;
+    }
+
+    .card-body a {
+        width: 55%;
+    }
+
+    .card-body h5 {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.6rem;
+    }
+
+    .card-body .btn {
+        font-size: 0.6rem;
+        padding: 2px;
+        height: 19px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 59px;
+        font-size: 1rem;
+    }
+
+    .carousel-control-next {
+        right: 4%;
+    }
+
+    .carousel-control-prev {
+        left: 4%;
+    }
+
     /* Toolchain box */
+    #toolsdetail{
+        margin-top:0px;
+    }
     .box {
         width: 85vw;
     }
@@ -685,6 +971,10 @@
         flex-wrap: wrap;
     }
 
+    .footer h3 {
+        font-size: 1.3rem;
+    }
+
     .footer p {
         font-size: 0.8rem;
         flex-direction: column;
@@ -702,19 +992,23 @@
     .footer ul li:nth-child(4) a {
         padding: 0 55px;
     }
-    .fa-github{
+
+    .fa-github {
         position: relative;
-        left:13px;
+        left: 13px;
     }
-    .fa-x-twitter{
+
+    .fa-x-twitter {
         position: relative;
-        left:14px;
+        left: 14px;
     }
-    .fa-regular{
+
+    .fa-regular {
         position: relative;
-        left:19px;
+        left: 19px;
     }
 }
+
 @media only screen and (min-width:321px) and (max-width:359px) {
 
     nav {
@@ -742,7 +1036,25 @@
 
     /* offcanvas About */
     .offcanvas {
-        --bs-offcanvas-width: 380px;
+        --bs-offcanvas-width: 180px;
+    }
+
+    .offcanvas-title {
+        font-size: 1rem;
+    }
+
+    .offcanvas-subheading h5 {
+        font-size: 0.95rem;
+    }
+
+    .offcanvas-body {
+        font-size: 0.6rem;
+    }
+
+    #offcanvasbtn {
+        position: relative;
+        left: -4px;
+        font-size: 0.5rem;
     }
 
     #project:hover {
@@ -756,31 +1068,39 @@
     }
 
     .leftsection {
-        width: 118%;
+        width: 100%;
         position: relative;
-        top: 40px;
-        right: 85px;
+        top: 82px;
+        left: 0px;
     }
 
     .leftsection p {
-        width: 70%;
-        font-size: 1.2rem;
+        width: 87%;
+        left: 30px;
+    }
+
+    #element1 {
+        font-size: 1.1rem;
     }
 
     #element2 {
-        width: 75%;
-        font-size: 1.7rem;
+        width: 87%;
+        left: -51px;
+        font-size: 1.1rem;
     }
 
     #element3 {
-        height: 29%;
-        font-size: 1.1rem;
+        height: 20%;
+        font-size: 1rem;
+        width: 89%;
+        left: 29px;
     }
 
     .firstsection .buttons {
         position: relative;
-        left: 40%;
+        left: 6%;
         top: 30px;
+        width: 300px;
     }
 
     .firstsection .buttons a {
@@ -788,15 +1108,75 @@
     }
 
     .rightsection {
-        width: 45%;
+        width: 33%;
     }
 
     .rightsection img {
-        margin: 23px -36px;
-        width: 208%;
+        margin: -30px -111px;
+        width: 301%;
+        padding-left: 75px;
+        height: 378px;
+    }
+    #reveal2{
+        position: relative;
+        transform: translateX(300%);
+        animation: transformreveal2 1s ease forwards;
+    }
+    main hr {
+        margin: 0 10px;
+    }
+
+    #Project h2 span,
+    #toolsdetail h2 span {
+        font-size: 1.15rem;
+    }
+
+    .card.carousel-img {
+        top: 47%;
+        width: 55%;
+    }
+
+    .carousel-inner {
+        width: 100% !important;
+        height: 70vh;
+    }
+
+    .card-body a {
+        width: 55%;
+    }
+
+    .card-body h5 {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.6rem;
+    }
+
+    .card-body .btn {
+        font-size: 0.6rem;
+        padding: 2px;
+        height: 19px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 59px;
+        font-size: 1rem;
+    }
+
+    .carousel-control-next {
+        right: 3%;
+    }
+
+    .carousel-control-prev {
+        left: 3%;
     }
 
     /* Toolchain box */
+    #toolsdetail{
+        margin-top:0px;
+    }
     .box {
         width: 85vw;
     }
@@ -822,6 +1202,10 @@
         flex-wrap: wrap;
     }
 
+    .footer h3 {
+        font-size: 1.15rem;
+    }
+
     .footer p {
         font-size: 0.8rem;
         flex-direction: column;
@@ -831,7 +1215,9 @@
     .footer ul {
         flex-wrap: wrap;
     }
-
+    .footer ul li {
+        font-size: 0.9rem;
+    }
     .footer ul li:nth-child(2) a {
         padding: 0 46px;
     }
@@ -839,19 +1225,23 @@
     .footer ul li:nth-child(4) a {
         padding: 0 55px;
     }
-    .fa-github{
+
+    .fa-github {
         position: relative;
-        left:13px;
+        left: 13px;
     }
-    .fa-x-twitter{
+
+    .fa-x-twitter {
         position: relative;
-        left:14px;
+        left: 14px;
     }
-    .fa-regular{
+
+    .fa-regular {
         position: relative;
-        left:19px;
+        left: 19px;
     }
 }
+
 @media only screen and (min-width:200px) and (max-width:320px) {
 
     nav {
@@ -879,7 +1269,25 @@
 
     /* offcanvas About */
     .offcanvas {
-        --bs-offcanvas-width: 380px;
+        --bs-offcanvas-width: 160px;
+    }
+
+    .offcanvas-title {
+        font-size: 1rem;
+    }
+
+    .offcanvas-subheading h5 {
+        font-size: 0.9rem;
+    }
+
+    .offcanvas-body {
+        font-size: 0.55rem;
+    }
+
+    #offcanvasbtn {
+        position: relative;
+        left: -4px;
+        font-size: 0.5rem;
     }
 
     #project:hover {
@@ -893,31 +1301,39 @@
     }
 
     .leftsection {
-        width: 118%;
+        width: 100%;
         position: relative;
-        top: 40px;
-        right: 85px;
+        top: 82px;
+        left: 0px;
     }
 
     .leftsection p {
-        width: 65%;
-        font-size: 1rem;
+        width: 87%;
+        left: 21px;
+    }
+
+    #element1 {
+        font-size: 0.95rem;
     }
 
     #element2 {
-        width: 75%;
-        font-size: 1.5rem;
+        width: 87%;
+        left: -53px;
+        font-size: 0.95rem;
     }
 
     #element3 {
-        height: 29%;
-        font-size: 1rem;
+        height: 20%;
+        width: 89%;
+        left: 26px;
+        font-size: 0.95rem;
     }
 
     .firstsection .buttons {
         position: relative;
-        left: 40%;
+        left: 6%;
         top: 30px;
+        width: 300px;
     }
 
     .firstsection .buttons a {
@@ -925,14 +1341,28 @@
     }
 
     .rightsection {
-        width: 45%;
+        width: 30%;
     }
 
     .rightsection img {
-        margin: 23px -36px;
-        width: 208%;
+        margin: -30px -42px;
+        width: 263%;
+        padding-left: 0px;
+        height: 308px;
+    }
+    #reveal2{
+        position: relative;
+        transform: translateX(300%);
+        animation: transformreveal2 1s ease forwards;
     }
 
+    main hr {
+        margin: 0 10px;
+    }
+    #Project h2 span,
+    #toolsdetail h2 span {
+        font-size: 0.7rem;
+    }
     /* Toolchain box */
     .box {
         width: 85vw;
@@ -958,7 +1388,53 @@
     .footer {
         flex-wrap: wrap;
     }
+    .footer h3 {
+        font-size: 0.8rem;
+    }
+    .card.carousel-img {
+        top: 47%;
+        width: 55%;
+    }
 
+    .carousel-inner {
+        width: 100% !important;
+        height: 70vh;
+    }
+
+    .card-body a {
+        width: 55%;
+    }
+
+    .card-body h5 {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.6rem;
+    }
+
+    .card-body .btn {
+        font-size: 0.6rem;
+        padding: 2px;
+        height: 19px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 59px;
+        font-size: 0.8rem;
+    }
+
+    .carousel-control-next {
+        right: 3%;
+    }
+
+    .carousel-control-prev {
+        left: 3%;
+    }
+    #toolsdetail{
+        margin-top:0px;
+    }
     .footer p {
         font-size: 0.65rem;
         flex-direction: column;
@@ -968,7 +1444,9 @@
     .footer ul {
         flex-wrap: wrap;
     }
-
+    .footer ul li {
+        font-size: 0.75rem;
+    }
     .footer ul li:nth-child(2) a {
         padding: 0 46px;
     }
@@ -976,16 +1454,19 @@
     .footer ul li:nth-child(4) a {
         padding: 0 55px;
     }
-    .fa-github{
+
+    .fa-github {
         position: relative;
-        left:13px;
+        left: 13px;
     }
-    .fa-x-twitter{
+
+    .fa-x-twitter {
         position: relative;
-        left:14px;
+        left: 14px;
     }
-    .fa-regular{
+
+    .fa-regular {
         position: relative;
-        left:19px;
+        left: 19px;
     }
 }

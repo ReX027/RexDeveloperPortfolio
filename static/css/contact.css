@@ -1,17 +1,14 @@
 * {
     padding: 0;
     margin: 0;
-    color: white;
+    color: #dbd2d2;
     scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
     width: 100vw;
-    background-color:black;
+    background-color: black;
     overflow-x: hidden;
 }
 
@@ -23,18 +20,18 @@ nav ul #left {
     position: absolute;
     left: 10%;
     top: 28px;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+}
+
+nav ul #left a {
+    text-decoration: none;
 }
 
 nav ul #right {
     position: absolute;
     right: 10%;
-    top: 35px;
+    top: 30px;
     cursor: pointer;
-}
-
-nav ul #right:hover {
-    opacity: 0.6;
 }
 
 header img {
@@ -61,17 +58,22 @@ section {
 }
 
 section h3 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     width: 100%;
     text-align: center;
     margin: 45px 0px;
-    background: transparent;
-    backdrop-filter: blur(15px);
+    font-weight: lighter;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
 }
 
 form {
     width: 400px;
-    height: 500px;
+    height: 551px;
     border: 2px solid #625d5d;
     display: flex;
     margin: 30px;
@@ -110,7 +112,6 @@ form {
     top: 50%;
     left: 5px;
     transform: translateY(-50%);
-    color: #fff;
     font-size: 1em;
     pointer-events: none;
     transition: 0.5s;
@@ -132,7 +133,6 @@ form {
     outline: none;
     font-size: 1em;
     padding: 0 35px 0 5px;
-    color: #ffffff;
     caret-color: white;
 }
 
@@ -144,15 +144,17 @@ form {
     top: 20px;
 }
 
+.mytextarea {
+    position: relative;
+    width: 300px;
+    border-bottom: 2px solid #fff;
+}
+
 .mytextarea label {
     font-size: 1em;
-    color: rgb(255, 255, 255);
     position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 90px;
-    top: 53%;
-    left: 11%;
+    top: 35px;
+    left: 1%;
     font-size: 1em;
     pointer-events: none;
 }
@@ -162,14 +164,13 @@ form {
     outline: none;
     font-size: large;
     border: none;
-    border-bottom: 1px solid rgb(255, 255, 255);
     margin-top: 68px;
     width: 101%;
     margin-right: 6px;
 }
 
 button {
-    width: 50%;
+    width: 100%;
     height: 40px;
     border-radius: 40px;
     background-color: #030303;
@@ -182,8 +183,24 @@ button {
     margin: 4px 0;
 }
 
-button:hover {
-    opacity: 0.5;
+@media(hover:hover) {
+    button:hover {
+        opacity: 0.5;
+    }
+
+    nav ul #right:hover {
+        opacity: 0.6;
+    }
+}
+
+@media(hover:none) {
+    button:active {
+        opacity: 0.5;
+    }
+
+    nav ul #right:active {
+        opacity: 0.6;
+    }
 }
 
 .forget {
@@ -199,199 +216,150 @@ button:hover {
 }
 
 /* Responsive */
-@media only screen and (max-width:900px) {
-    * {
-        color: rgb(255, 255, 255);
-    }
+@media only screen and (max-width:1006px) {
 
     nav ul #left {
-        margin: 2px -37px;
-    }
-
-    nav ul #right {
-        margin: 12px -12px;
-    }
-
-    section h3 {
-        margin: 34px 0px;
-    }
-}
-
-@media only screen and (max-width:587px) {
-    * {
-        color: rgb(255, 255, 255);
-    }
-
-    nav ul #left {
-        margin: 2px -37px;
-        font-size: 1.6rem;
-    }
-
-    nav ul #right {
-        margin: 1px -12px;
+        font-size: 1.3rem;
     }
 
     header img {
-        left: 54%;
-        height: 43px;
-    }
-
-    section h3 {
-        font-size: 1.4rem;
-    }
-}
-
-@media only screen and (max-width:452px) {
-    * {
-        color: rgb(255, 255, 255);
+        height: 40px;
     }
 
     section h3 {
         font-size: 1.3rem;
+        margin: 35px 0px;
+    }
+}
+
+@media only screen and (max-width:628px) {
+    nav ul #left {
+        margin: 0px -37px;
+        font-size: 1.3rem;
     }
 
-    form {
-        height: 493px;
-        margin: -21px;
+    section h3 {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (max-width:450px) {
+    header img {
+        height: 30px;
+    }
+
+    nav ul #left {
+        font-size: 1.2rem;
+    }
+
+    section h3 {
+        font-size: 1.2rem;
     }
 
     button {
-        /* border: none; */
         margin: 4px 0 14px 0;
     }
 }
 
 @media only screen and (max-width:437px) {
-    * {
-        color: rgb(255, 255, 255);
+    header img {
+        height: 30px;
+    }
+
+    nav ul #left {
+        font-size: 1.2rem;
     }
 
     section h3 {
-        font-size: 1.3rem;
+        font-size: 1.05rem;
     }
 
     form {
-        height: 438px;
-        width: 340px;
-        margin: -21px;
+        width: 314px;
+        height: 478px;
     }
 
     .inputbox {
         margin: 15px 0;
+        width: 250px;
+        left: 20px;
     }
 
-    .mytextarea label {
-        top: 48%;
-        left: 5%;
+    .mytextarea {
+        width: 250px;
+        left: 20px;
     }
+
+    .forget {
+        position: relative;
+        left: 20px;
+    }
+
+    button {
+        position: relative;
+        width: 80%;
+        left: 20px;
+    }
+
 }
 
 @media only screen and (max-width:355px) {
-    * {
-        color: rgb(255, 255, 255);
+
+    header img {
+        height: 30px;
     }
 
     nav ul #left {
-        position: absolute;
-        left: 15%;
-        top: 28px;
-        font-size: 1.2rem;
-        /* font-weight: 100; */
+        font-size: 0.9rem;
+        left: 50px
     }
 
     nav ul #right {
-        margin: 1px -25px;
-    }
-
-    header img {
-        left: 61%;
-        height: 25px;
-    }
-
-    .fa-circle-xmark {
-        height: 10px;
+        margin: 0px -20px;
     }
 
     section h3 {
-        font-size: 1.3rem;
+        font-size: 0.9rem;
     }
 
     form {
-        height: 438px;
-        width: 318px;
-        margin: -21px;
-    }
-
-    .inputbox {
-        margin: 15px 0;
-        width: 83%;
-    }
-
-    .mytextarea label {
-        top: 48%;
-        left: 5%;
-    }
-    .mytextarea #text {
-        margin-right: -22px;
-    }
-}
-
-@media only screen and (max-width:332px) {
-    * {
-        color: rgb(255, 255, 255);
-    }
-    nav ul #left {
-        position: absolute;
-        left: 15%;
-        top: 28px;
-        font-size: 1.2rem;
-        /* font-weight: 100; */
-    }
-
-    nav ul #right {
-        margin: 1px -20px;
-    }
-
-    header img {
-        left: 61%;
-        height: 25px;
-    }
-
-    .fa-circle-xmark {
-        height: 10px;
-    }
-
-    section h3 {
-        font-size: 1.3rem;
-    }
-
-    form {
-        height: 428px;
-        width: 230px;
-        margin: -21px;
-    }
-
-    .inputbox {
-        margin: 15px 0;
-        width: 83%;
-    }
-
-    .mytextarea label {
-        top: 48%;
-        left: 5%;
-    }
-
-    .mytextarea #text {
-        margin-right: -93px;
-    }
-
-    .forget label {
-        width: 108px;
         position: relative;
-        left: 52%;
+        height: 438px;
+        width: 267px;
+        /* margin: -21px; */
     }
+
+    .inputbox {
+        font-size: 0.85rem;
+        position: relative;
+        width: 210px;
+        left: 45px;
+    }
+
+    .mytextarea {
+        width: 210px;
+        left: 45px;
+    }
+
+    .mytextarea label {
+        top: 15%;
+        font-size: 0.85rem;
+    }
+
+    .mytextarea #text {
+        width: 200px;
+        margin-top: 43px;
+    }
+
+    .forget {
+        position: relative;
+        left: 45px;
+    }
+
     button {
-        font-size: 1em;
-        
+        position: relative;
+        left: 45px;
+        width: 72%;
     }
 }
