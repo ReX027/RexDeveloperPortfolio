@@ -16,14 +16,14 @@ nav#navbar
   .right
     ul
       li
-        a(href='/') Home
+        a.activebtn.homelink(href='/') Home
       li
-        a#abouttag.text-light(href='/' data-bs-toggle='offcanvas' data-bs-target='#offcanvasWithBothOptions' aria-controls='offcanvasWithBothOptions') About
-        #offcanvasWithBothOptions.offcanvas.offcanvas-start.text-bg-dark(data-bs-scroll='true' tabindex='-1' aria-labelledby='offcanvasWithBothOptionsLabel')
+        a#abouttag(href='/' data-bs-toggle='offcanvas' data-bs-target='#offcanvasWithBothOptions' aria-controls='offcanvasWithBothOptions') About
+        #offcanvasWithBothOptions.offcanvas.offcanvas-start.text-bg-dark(data-bs-scroll='false' tabindex='-1' aria-labelledby='offcanvasWithBothOptionsLabel')
           .offcanvas-header
             h3#offcanvasWithBothOptionsLabel.offcanvas-title
               | About Me
-            button.btn-close(type='button' style="background-color:white,border:none" data-bs-dismiss='offcanvas' aria-label='Close')
+            button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
           .offcanvas-subheading
             h5 Get to know me!
           .offcanvas-body
@@ -80,7 +80,7 @@ nav#navbar
                   | Visit 
                   i.fa-solid.fa-arrow-up-right-from-square
       li
-        a(href='/contact') Contact Me
+        a.contactlink(href='/contact') Contact Me
 main#main
   section.firstsection
     .leftsection#reveal1
@@ -162,6 +162,7 @@ main#main
         i.fa-solid.fa-hand-point-left.fa-2xl.carousel-control(aria-hidden='true' style='color: #c410d1;')
       button.carousel-control-next(type='button' data-bs-target='#carouselExample' data-bs-slide='next')
         i.fa-solid.fa-hand-point-right.fa-2xl.carousel-control(aria-hidden='true' style='color: #c410d1;')
+  section.thirdsection
     #toolsdetail
       h2
         span Toolchain

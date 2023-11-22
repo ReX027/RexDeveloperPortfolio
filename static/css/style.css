@@ -77,7 +77,13 @@ nav ul li a {
         left: 0;
         background-color: #c56fec;
     }
-
+    nav ul li>a:hover{
+        color:#ff00ff;
+        transition:0.5s ease-out;
+    }
+    nav ul li > a.activebtn{
+        color:#ff00ff;
+    }
     #project:hover {
         #dropdowncontent {
             display: flex;
@@ -141,7 +147,15 @@ nav ul li a {
         left: 0;
         background-color: #c56fec;
     }
-
+    nav ul li>a:active{
+        color:#ff00ff;
+        font-weight: bolder;
+        transition:0.5s ease-out;
+    }
+    nav ul li > a.activebtn{
+        color:#ff00ff;
+        font-weight: bolder;
+    }
     .buttons a:active {
         background: #03e9f4;
         color: #fff;
@@ -173,7 +187,13 @@ nav ul li a {
 .offcanvas-title {
     font-family: monospace;
 }
-
+.btn-close{
+    background-color:white;
+}
+.btn-close:focus,.btn-close:active{
+    outline:none !important;
+    box-shadow: none;
+}
 .offcanvas-subheading h5 {
     text-align: center;
     color: purple;
@@ -288,6 +308,11 @@ nav ul li a {
         transform:translateX(0);
     }
 }
+@keyframes hidereveal1{
+    to{
+        transform:translateX(-100%);
+    }
+}
 #reveal2 {
     position: relative;
     transform: translateX(130%);
@@ -296,6 +321,11 @@ nav ul li a {
 @keyframes transformreveal2 {
     to{
         transform:translateX(0);
+    }
+}
+@keyframes hidereveal2{
+    to{
+        transform:translateX(130%);
     }
 }
 
@@ -615,23 +645,18 @@ main hr {
 }
 
 /* Project heading */
-/* #projectdetail h2 {
-    text-align: center;
-    color: purple;
-    margin-bottom:30px;
-} */
 #Project {
     display: flex;
     justify-content: center;
     text-align: center;
     color: purple;
-    margin: 70px;
+    margin: 50px;
 }
 
 /* Tool section (Common section) */
-#toolsdetail{
+/* #toolsdetail{
     margin-top:100px;
-}
+} */
 #toolsdetail h2 {
     text-align: center;
     color: purple;
@@ -659,8 +684,9 @@ main hr {
 /* Projects carousel */
 
 #carouselExample {
-    position: relative;
-    transform: translateX(-100%);
+    position:relative;
+    transform:translateX(-100%);
+    /* animation:transformcarousel 4s ease forwards; */
 }
 
 @keyframes transformcarousel {
@@ -759,9 +785,12 @@ main hr {
 }
 
 
-/* Add media queries for different screen sizes if needed */
-
 /* Tools content */
+.thirdsection{
+    display:flex;
+    flex-direction:column;
+    margin:25px 0 25px 0;
+}
 .box {
     display: flex;
     flex-wrap: wrap;

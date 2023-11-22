@@ -16,7 +16,7 @@ nameid.addEventListener('blur', () => {
   let str = nameid.value;
   const popover = document.querySelector(`.popover[data-field="name"]`);
   // Validate name here
-  let regex = /^([a-zA-Z ]){1,31}$/;
+  let regex = /^(?=.*[^\s])[a-zA-Z ]{1,31}$/;
   popover.textContent = nameid.getAttribute('data-error-message');
   popover.style.display = 'block';
   const inputBox = nameid.closest('.inputbox');
@@ -25,7 +25,7 @@ nameid.addEventListener('blur', () => {
     popover.style.display = 'none';
     input1.style.borderBottomColor = 'white';
   }
-  else {
+  else{
     popover.style.left = '0';
     popover.style.top = inputBox.offsetHeight + 'px';
     input1.style.borderBottomColor = 'red';
@@ -36,7 +36,7 @@ email.addEventListener('blur', () => {
   const popover = document.querySelector(`.popover[data-field="email"]`);
 
   // Validate name here
-  let regex =/^[^@]+@[^.]+\.[a-z]{2,}(?:\.[a-z]{2})?$/;
+  let regex =/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   popover.textContent = email.getAttribute('data-error-message');
   popover.style.display = 'block';
   const inputBox = email.closest('.inputbox');
@@ -80,7 +80,6 @@ form.addEventListener('submit', (event) => {
   const messageValue = message.value;
   const submitButton = document.querySelector('button[type="submit"]');
 
-
   // Validate each field
   if (!isValidName(nameValue)) {
     // Show error for name or prevent submission if name is invalid
@@ -92,15 +91,15 @@ form.addEventListener('submit', (event) => {
     email.value = '';
     event.preventDefault();
   }
-  else if (!isvalidmessage(messageValue)) {
+  else if (isvalidmessage(messageValue)) {
     // Show error for message or prevent submission if message is empty
     event.preventDefault();
   }
   else{
-    submitButton.textContent = 'Please wait...';
     setTimeout(() => {
       form.submit();
     }, 3500);
+    submitButton.textContent = 'Please wait...';
   }
 });
 

@@ -11,27 +11,76 @@ document.getElementById("linkedinlink").addEventListener("click", function () {
   window.open("https://www.linkedin.com/in/tusharvaid/", "_blank");
 });
 
+// navbar animation
+const menulinks = document.querySelectorAll('nav ul li > a');
+function removeActiveClass() {
+  document.querySelector('.activebtn').classList.remove('activebtn');
+}
+menulinks.forEach(menulinks =>{
+  menulinks.addEventListener('click',()=>{
+    removeActiveClass();
+    menulinks.classList.add('activebtn');
+  })
+  if(document.documentElement.scrollTop===0){
+    // document.querySelector('.activebtn').classList.remove('activebtn');
+    removeActiveClass();
+    document.querySelector('.homelink').classList.add('activebtn');
+  }
+})
+
+const offcanvasbtn = document.querySelector('.offcanvas button');
+offcanvasbtn.addEventListener('click', () => {
+  document.querySelector('.activebtn').classList.remove('activebtn');
+  document.querySelector('.homelink').classList.add('activebtn');
+});
+
+const contactlink = document.querySelector('.contactlink');
+contactlink.addEventListener('click',()=>{
+  document.querySelector('.activebtn').classList.remove('activebtn');
+  document.querySelector('.homelink').classList.add('activebtn');
+})
 // Animation in HomePage
 
-var reveal1 = document.getElementById("reveal1");
-var reveal2 = document.getElementById("reveal2");
+const windowHeight = document.documentElement.clientHeight;
 
-var windowHeight = document.documentElement.clientHeight;
+// firstsection reveal variables
+const reveal1 = document.getElementById("reveal1");
+const reveal2 = document.getElementById("reveal2");
+const reveal1Y = reveal1.getBoundingClientRect().y;
+const reveal2Y = reveal2.getBoundingClientRect().y;
+const reveal1Height = reveal1.getBoundingClientRect().height;
+const reveal2Height = reveal2.getBoundingClientRect().height;
 
-var reval1Y = reveal1.getBoundingClientRect().y;
-var reval2Y = reveal2.getBoundingClientRect().y;
+// Carousel variables
+const carousel = document.getElementById('carouselExample');
+const carouselY = carousel.getBoundingClientRect().y;
+const carouselHeight = carousel.getBoundingClientRect().height;
 
-var carousel = document.getElementById('carouselExample');
+// scroll event listener
+const currentScrollPos = window.scrollY;
+const projectTop = document.querySelector('#Project').offsetTop;
+const offcanvas = document.querySelector('.offcanvas');
 window.addEventListener("scroll", function () {
-  
+  // navbar scroll animation
+  offcanvas.addEventListener('hide.bs.offcanvas', () => {
+    if (currentScrollPos >= 2/3*projectTop) {
+      document.querySelector('a[href="#Project"]').classList.add('activebtn');
+      document.querySelector('.homelink').classList.remove('activebtn');
+    }else{
+      document.querySelector('.homelink').classList.add('activebtn');
+      document.querySelector('.activebtn').classList.remove('activebtn');
+    }
+  });
+  if(currentScrollPos >= 2/3*projectTop){
+    document.querySelector('.homelink').classList.remove('activebtn');
+    document.querySelector('a[href="#Project"]').classList.add('activebtn');
+  }else{
+    document.querySelector('a[href="#Project"]').classList.remove('activebtn');
+    document.querySelector('.homelink').classList.add('activebtn');
+  }
   // carousel animation
-  var carouselY = carousel.getBoundingClientRect().y;
-  // var carouselYbottom = carousel.getBoundingClientRect().bottom;
-  var carouselHeight = carousel.getBoundingClientRect().height;
-  if(windowHeight >carouselY + carouselHeight*1/3){
+  if(windowHeight > carouselHeight*1/3){
     carousel.style.animation = 'transformcarousel 2s ease forwards';
   }
-  // else if(windowHeight> carouselHeight){
-  //   carousel.style.animation = 'transformcarouselback 2s ease backwards';
-  // }
 });
+
