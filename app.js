@@ -8,7 +8,7 @@ require('dotenv').config()
 
 connectToMongo();
 const app = express();
-const PORT = 5000
+const PORT = process.env.PORT || 5000
 
 app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(bodyParser.json());
@@ -34,6 +34,6 @@ app.post('/submit',(req, res) => {
         res.status(400).send("Server Error Pls wait..");
     })
 })
-app.listen(process.env.PORT || PORT, () => {
-    console.log(`The application started successfully on port ${process.env.PORT}`);
+app.listen(PORT, () => {
+    console.log(`The application started successfully on port ${PORT}`);
 })
