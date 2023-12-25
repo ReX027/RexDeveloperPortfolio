@@ -75,7 +75,7 @@ message.addEventListener('blur',mymessage);
 const form = document.getElementById('contactform');
 
 form.addEventListener('submit', (event) => {
-  const nameValue = nameid.value;
+  const nameValue = nameid.value.trim();
   const emailValue = email.value.trim();
   const messageValue = message.value;
   const submitButton = document.querySelector('button[type="submit"]');
