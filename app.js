@@ -3,6 +3,7 @@ const express = require('express')
 const path = require("path");
 const bodyParser = require('body-parser');
 const User = require("./models/Users");
+require('dotenv').config()
 
 connectToMongo();
 const app = express();
