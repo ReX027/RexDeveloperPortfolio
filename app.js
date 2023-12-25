@@ -3,11 +3,12 @@ const express = require('express')
 const path = require("path");
 const bodyParser = require('body-parser');
 const User = require("./models/Users");
+const { prototype } = require('module');
 require('dotenv').config()
 
 connectToMongo();
 const app = express();
-const port = 5000
+const PORT = 5000
 
 app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(bodyParser.json());
@@ -29,10 +30,10 @@ app.post('/submit',(req, res) => {
     const userdata = new User(req.body);
     userdata.save().then(() => {
         res.status(200).render('submit.pug');
-    }).catch(() => {
-        // res.status(400).('Server Error'); 
+    }).catch((err) => {
+        res.status(400).send("Server Error Pls wait..");
     })
 })
-app.listen(port, () => {
-    console.log(`The application started successfully on port ${port}`);
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`The application started successfully on port ${process.env.PORT}`);
 })
