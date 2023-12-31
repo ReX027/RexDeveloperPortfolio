@@ -12,6 +12,8 @@ Your visit is greatly appreciated, providing an opportunity to showcase my skill
 - [views](./views): Contains Pug files for rendering views.
 - [static](./static): Houses static assets such as CSS, images, and JavaScript 
                       files.
+- [models](./models) It has the user schema model.
+- [db.js](./db.js) To connect to the database.
 
 # Getting Started
 
