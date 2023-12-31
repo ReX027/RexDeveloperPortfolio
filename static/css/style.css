@@ -77,13 +77,16 @@ nav ul li a {
         left: 0;
         background-color: #c56fec;
     }
-    nav ul li>a:hover{
-        color:#ff00ff;
-        transition:0.5s ease-out;
+
+    nav ul li>a:hover {
+        color: #ff00ff;
+        transition: 0.5s ease-out;
     }
-    nav ul li > a.activebtn{
-        color:#ff00ff;
+
+    nav ul li>a.activebtn {
+        color: #ff00ff;
     }
+
     #project:hover {
         #dropdowncontent {
             display: flex;
@@ -147,15 +150,18 @@ nav ul li a {
         left: 0;
         background-color: #c56fec;
     }
-    nav ul li>a:active{
-        color:#ff00ff;
+
+    nav ul li>a:active {
+        color: #ff00ff;
         font-weight: bolder;
-        transition:0.5s ease-out;
+        transition: 0.5s ease-out;
     }
-    nav ul li > a.activebtn{
-        color:#ff00ff;
+
+    nav ul li>a.activebtn {
+        color: #ff00ff;
         font-weight: bolder;
     }
+
     .buttons a:active {
         background: #03e9f4;
         color: #fff;
@@ -187,13 +193,17 @@ nav ul li a {
 .offcanvas-title {
     font-family: monospace;
 }
-.btn-close{
-    background-color:white;
+
+.btn-close {
+    background-color: white;
 }
-.btn-close:focus,.btn-close:active{
-    outline:none !important;
+
+.btn-close:focus,
+.btn-close:active {
+    outline: none !important;
     box-shadow: none;
 }
+
 .offcanvas-subheading h5 {
     text-align: center;
     color: purple;
@@ -288,7 +298,7 @@ nav ul li a {
 /* Main section - left section */
 .leftsection {
     display: flex;
-    position:relative;
+    position: relative;
     bottom: 50px;
     height: 50%;
     width: 80%;
@@ -298,34 +308,39 @@ nav ul li a {
     font-size: 2rem;
 }
 
-#reveal1{
+#reveal1 {
     position: relative;
     transform: translateX(-100%);
     animation: transformreveal1 1.5s ease forwards;
 }
+
 @keyframes transformreveal1 {
-    to{
-        transform:translateX(0);
+    to {
+        transform: translateX(0);
     }
 }
-@keyframes hidereveal1{
-    to{
-        transform:translateX(-100%);
+
+@keyframes hidereveal1 {
+    to {
+        transform: translateX(-100%);
     }
 }
+
 #reveal2 {
     position: relative;
     transform: translateX(130%);
     animation: transformreveal2 1.5s ease forwards;
 }
+
 @keyframes transformreveal2 {
-    to{
-        transform:translateX(0);
+    to {
+        transform: translateX(0);
     }
 }
-@keyframes hidereveal2{
-    to{
-        transform:translateX(130%);
+
+@keyframes hidereveal2 {
+    to {
+        transform: translateX(130%);
     }
 }
 
@@ -336,32 +351,38 @@ nav ul li a {
         height: -webkit-fill-mode;
         width: -webkit-fill-mode;
     }
+
     body {
-        height:100svh;
-        width:100svw;
+        height: 100svh;
+        width: 100svw;
         overflow-x: hidden;
     }
-    .firstsection{
-        overflow:hidden;
+
+    .firstsection {
+        overflow: hidden;
     }
-    #reveal1{
+
+    #reveal1 {
         position: relative;
         transform: translateX(-100%);
         animation: transformreveal1 1s ease forwards;
     }
+
     @keyframes transformreveal1 {
-        to{
-            transform:translateX(0);
+        to {
+            transform: translateX(0);
         }
     }
-    #reveal2{
+
+    #reveal2 {
         position: relative;
         transform: translateX(200%);
         animation: transformreveal2 1s ease forwards;
     }
+
     @keyframes transformreveal2 {
-        to{
-            transform:translateX(0);
+        to {
+            transform: translateX(0);
         }
     }
 }
@@ -684,8 +705,8 @@ main hr {
 /* Projects carousel */
 
 #carouselExample {
-    position:relative;
-    transform:translateX(-100%);
+    position: relative;
+    transform: translateX(-100%);
     /* animation:transformcarousel 4s ease forwards; */
 }
 
@@ -694,6 +715,7 @@ main hr {
         transform: translateX(0);
     }
 }
+
 /* @keyframes transformcarouselback {
     to {
         transform: translateX(-100%);
@@ -762,7 +784,7 @@ main hr {
 }
 
 .card-text {
-    font-family:serif;
+    font-family: serif;
     font-size: 1.25rem;
 }
 
@@ -786,11 +808,12 @@ main hr {
 
 
 /* Tools content */
-.thirdsection{
-    display:flex;
-    flex-direction:column;
-    margin:25px 0 25px 0;
+.thirdsection {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0 25px 0;
 }
+
 .box {
     display: flex;
     flex-wrap: wrap;
@@ -818,37 +841,37 @@ main hr {
 }
 
 .box #items1 {
-    background-image: url("../Img/react.png");
+    background-image: url("/static/images/react.png");
     background-repeat: no-repeat;
     background-position: 20px;
 }
 
 .box #items2 {
-    background-image: url("../Img/nodejs.png");
+    background-image: url("/static/images/nodejs.png");
     background-repeat: no-repeat;
     background-position: 20px;
 }
 
 .box #items3 {
-    background-image: url("../Img/mongodb.png");
+    background-image: url("/static/images/mongodb.png");
     background-repeat: no-repeat;
     background-position: 10px;
 }
 
 .box #items4 {
-    background-image: url("..//Img/javascript.png");
+    background-image: url("..//images/javascript.png");
     background-repeat: no-repeat;
     background-position: 10px;
 }
 
 .box #items5 {
-    background-image: url("../Img/ServiceNow.png");
+    background-image: url("/static/images/ServiceNow.png");
     background-repeat: no-repeat;
     background-position: 10px;
 }
 
 .box #items6 {
-    background-image: url("../Img/Jupyternotebook.png");
+    background-image: url("/static/images/Jupyternotebook.png");
     background-repeat: no-repeat;
     background-position: 10px;
     background-size: 20%;
