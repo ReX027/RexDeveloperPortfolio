@@ -13,11 +13,13 @@ const app = express();
 // app.use(bodyParser.json());
 
 // app.use('/static', express.static(path.join(__dirname, 'static')));
-app.use('/static', express.static('static')); // For serving static files
-app.use(express.urlencoded());
+// app.use('/static', express.static('static')); // For serving static files
+// app.use(express.urlencoded());
 // Pug configuration
 app.set('view engine', 'pug'); //setting template engine as pug
 app.set('views', path.join(__dirname, 'views')) //setting the public directory
+
+app.use('/static', express.static(path.join(__dirname, 'static')));
 
 app.get('/', (req, res) => {
     res.status(200).render('index.pug');
