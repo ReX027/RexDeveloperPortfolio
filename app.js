@@ -11,7 +11,6 @@ const app = express();
 
 // app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(bodyParser.json());
-
 // app.use('/static', express.static(path.join(__dirname, 'static')));
 // app.use('/static', express.static('static')); // For serving static files
 // app.use(express.urlencoded());
