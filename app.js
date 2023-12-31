@@ -1,7 +1,7 @@
 const connectToMongo = require('./db');
 const express = require('express')
 const path = require("path");
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 const User = require("./models/Users");
 
 require('dotenv').config()
@@ -9,7 +9,7 @@ require('dotenv').config()
 connectToMongo();
 const app = express();
 
-app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(bodyParser.json());
 
 app.use('/static', express.static('static')); // For serving static files
@@ -30,7 +30,8 @@ app.post('/submit', (req, res) => {
     userdata.save().then(() => {
         res.status(200).render('submit.pug');
     }).catch((err) => {
-        res.status(400).send("Server Error Pls wait..");
+        console.error('Error saving user data:', err);
+        res.status(500).send("Server Error. Please try again later.");
     })
 })
 const PORT = process.env.PORT || 5000
