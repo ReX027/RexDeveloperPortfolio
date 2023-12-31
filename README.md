@@ -1,7 +1,7 @@
 # DeveloperPortfolio
 A fully Responsive Developer Portfolio website built using HTML, CSS , Javascript , Pure Pug and Nodejs.
 
-Visit my website at [https://rex-developer-portfolio.vercel.app/](https://rex-developer-portfolio.vercel.app/) for reference.
+Visit my website at [https://rex-developer-portfolio-cuk9bqn40-rex027s-projects.vercel.app/](https://rex-developer-portfolio-cuk9bqn40-rex027s-projects.vercel.app/) for reference.
 Feel free to explore the site to gain insights into my professional background and project portfolio, which includes a collection of web applications I have developed. 
 Your visit is greatly appreciated, providing an opportunity to showcase my skills and project accomplishments.
 
