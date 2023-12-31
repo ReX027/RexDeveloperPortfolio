@@ -12,7 +12,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(bodyParser.json());
 
-app.use('/static', express.static('static')); // For serving static files
+app.use('/public', express.static('public')); // For serving static files
 app.use(express.urlencoded());
 // Pug configuration
 app.set('view engine', 'pug'); //setting template engine as pug
