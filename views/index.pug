@@ -4,9 +4,9 @@ head
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
   title Tushar - Potfolio
   link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN' crossorigin='anonymous')
-  link(rel='stylesheet' href='/public/css/style.css')
+  link(rel='stylesheet' href='/static/css/style.css')
   // Responsive CSS
-  link(rel='stylesheet' media='(max-width:1422px)' href='/public/css/responsive.css')
+  link(rel='stylesheet' media='(max-width:1422px)' href='/static/css/responsive.css')
   link(rel='preconnect' href='https://fonts.googleapis.com')
   link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
   link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap' rel='stylesheet')
@@ -59,21 +59,21 @@ nav#navbar
         #dropdowncontent
           .rowcontent
             .cardcontent
-              img.card-img-top(src='/public/Img/TextUtils.png' alt='...')
+              img.card-img-top(src='/static/Img/TextUtils.png' alt='...')
               .card-bodycontent
                 h3.card-titlecontent TextUtils
                 a.btn(href='https://text-utils-jade.vercel.app/' target="_blank")
                   | Visit 
                   i.fa-solid.fa-arrow-up-right-from-square
             .cardcontent
-              img.card-img-top(src='/public/Img/PGLife.png' alt='...')
+              img.card-img-top(src='/static/Img/PGLife.png' alt='...')
               .card-bodycontent
                 h3.card-titlecontent PG Life
                 a.btn(href='http://146.190.9.56/' target="_blank")
                   | Visit 
                   i.fa-solid.fa-arrow-up-right-from-square
             .cardcontent
-              img.card-img-top(src='/public/Img//Gym.png' alt='...')
+              img.card-img-top(src='/static/Img//Gym.png' alt='...')
               .card-bodycontent
                 h3.card-titlecontent Gym Website
                 a.btn(href='http://64.227.176.178:3000/' target="_blank")
@@ -105,7 +105,7 @@ main#main
           span
           |                             Visit Github
     .rightsection#reveal2
-      img(src='/public/Img/bg.png')
+      img(src='/static/Img/bg.png')
   hr
   section.secondsection
     #Project
@@ -114,9 +114,9 @@ main#main
     .carousel.slide#carouselExample
       .carousel-inner
         .carousel-item.active
-          img.d-block.w-100(src='/public/Img/TextUtils.png' alt='...')
+          img.d-block.w-100(src='/static/Img/TextUtils.png' alt='...')
           .card.carousel-img
-            img.card-img-top(src='/public/Img/TextUtils.png' alt='...')
+            img.card-img-top(src='/static/Img/TextUtils.png' alt='...')
             .card.carousel-card  
               .card-body
                 h5.card-title
@@ -129,9 +129,9 @@ main#main
                   | Visit 
                   i.fa-solid.fa-arrow-up-right-from-square
         .carousel-item
-          img.d-block.w-100(src='/public/Img//PGLife.png' alt='...')
+          img.d-block.w-100(src='/static/Img//PGLife.png' alt='...')
           .card.carousel-img
-            img.card-img-top(src='/public/Img/PGLife.png' alt='...')
+            img.card-img-top(src='/static/Img/PGLife.png' alt='...')
             .card.carousel-card
               .card-body
                 h5.card-title
@@ -144,9 +144,9 @@ main#main
                   | Visit 
                   i.fa-solid.fa-arrow-up-right-from-square
         .carousel-item
-          img.d-block.w-100(src='/public/Img/Gym.png' alt='...')
+          img.d-block.w-100(src='/static/Img/Gym.png' alt='...')
           .card.carousel-img
-            img.card-img-top(src='/public/Img/Gym.png' alt='...')
+            img.card-img-top(src='/static/Img/Gym.png' alt='...')
             .card.carousel-card
               .card-body
                 h5.card-title
@@ -195,7 +195,7 @@ footer
           i.fa-regular.fa-envelope
     p
       | Built from scratch 
-      img(src='/public/Img/heart.png' alt='...' loading='lazy')
+      img(src='/static/Img/heart.png' alt='...' loading='lazy')
       |  &copy;
       |                     Copyright
       |                     2023 @Rex All rights Reserved
@@ -211,5 +211,5 @@ script.
   typeSpeed: 50,
   showCursor: false
   });
-script(src='/public/js/script.js')
+script(src='/static/js/script.js')
 script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL' crossorigin='anonymous')
