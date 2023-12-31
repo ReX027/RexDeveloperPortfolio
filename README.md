@@ -7,11 +7,11 @@ Your visit is greatly appreciated, providing an opportunity to showcase my skill
 
 ## Project Structure
 
-- **app.js:** Main entry point for the Express server. Handles server logic and routing.
-- **views:** Contains Pug files for rendering views.
-- **static:** Contains static assets such as CSS, images, and JavaScript files.
-- **models:** It has the user schema model.
-- **db.js:** To connect to the database.
+- [app.js](./app.js): Main entry point for the Express server. Handles server   
+                      logic and routing.
+- [views](./views): Contains Pug files for rendering views.
+- [static](./static): Houses static assets such as CSS, images, and JavaScript 
+                      files.
 
 # Getting Started
 
