@@ -1,7 +1,7 @@
 const connectToMongo = require('./db');
 const express = require('express')
 const path = require("path");
-// const bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 const User = require("./models/Users");
 
 require('dotenv').config()
@@ -9,8 +9,8 @@ require('dotenv').config()
 connectToMongo();
 const app = express();
 
-// app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 // app.use('/static', express.static(path.join(__dirname, 'static')));
 // app.use('/static', express.static('static')); // For serving static files
 // app.use(express.urlencoded());
